@@ -16,25 +16,24 @@
             background-color: #f4f4f4;
             color: #333;
         }
-	.download-btn {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #16a085;
-    color: white;
-    font-size: 1.2em;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
 
-.download-btn:hover {
-    background-color: #1abc9c;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
-
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
 
         section {
             max-width: 1200px;
@@ -179,6 +178,32 @@
             transform: translateY(0);
         }
 
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
     </style>
 </head>
 
@@ -197,23 +222,24 @@
             Your browser does not support the video tag.
         </video>
         <!-- Download Video -->
-       <!-- Stylish Download Video Button -->
-<div class="cta">
-    <a href="mp4/dynamic.mp4" download="dynamic_meditation_video.mp4" class="download-btn">Download Video</a>
-</div>
-<!-- Audio Section with Download Option -->
+        <div class="cta">
+            <a href="mp4/dynamic.mp4" download="dynamic_meditation_video.mp4" class="download-btn">Download Video</a>
+        </div>
+        
+        <!-- Audio Section with Download Option -->
         <p><strong>To practice this meditation:</strong> Download the audio and listen to it while following the steps below.</p>
 
         <!-- Audio Section -->
         <audio controls>
-            <source src="mp3/dynamic.mp3" type="audio/mpeg">
+            <source src="mp3/Dynamic.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
 
         <!-- Download Audio -->
-<div class="cta">
-        <a href="mp3/dynamic.mp3" download="meditation_audio.mp3">Download Audio</a>
-</div>
+        <div class="cta">
+            <a href="mp3/dynamic.mp3" download="Dynamic.mp3">Download Audio</a>
+        </div>
+
         <!-- Meditation Steps -->
         <div class="step">
             <h2 class="step-title">1. Preparation</h2>
