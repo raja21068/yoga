@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gibberish</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>Gibberish and Let-go Meditation</h1>
+
+
+   
+     <iframe width="560" height="315" 
+src="https://www.youtube.com/embed/JaAEaAj4p28?si=GeOg8QRl4GF2N-Hy" 
+title="YouTube video player" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+        <!-- Audio Section -->
+        <audio controls>
+            <source src="mp3/gibberish-part-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Download Audio -->
+        <div class="cta">
+            <a href="mp3/gibberish-part-1.mp3" download="gibberish-part-1.mp3">Download Audio Part 1</a>
+        </div>
+
+
+		<!-- Audio Section -->
+				<audio controls>
+					<source src="mp3/gibberish-part-2.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+
+				<!-- Download Audio -->
+				<div class="cta">
+					<a href="mp3/gibberish-part-2.mp3" download="gibberish-part-2.mp3">Download Audio Part 2</a>
+				</div>
+
+   <p><strong>To practice this meditation:</strong> Download the audio and listen to it while following the steps below.</p>
+   
+        <!-- First Stage -->
+        <div class="step">
+            <h2 class="step-title">First Stage: Gibberish</h2>
+            <p class="step-description">While sitting, close your eyes and begin to say nonsense sounds – any sounds or words, so long as they make no sense. Just speak any language that you don’t know! Allow yourself to express whatever needs to be expressed within you. Throw everything out. The mind thinks, always, in terms of words. Gibberish helps to break up this pattern of continual verbalization. Without suppressing your thoughts, you can throw them out. Let your body likewise be expressive.</p>
+			<img src="images/gibberish1.webp" alt="Meditation Stage 1">
+			
+        </div>
+
+        <!-- Second Stage -->
+        <div class="step">
+            <h2 class="step-title">Second Stage: Moving In</h2>
+            <p class="step-description">After some minutes of Gibberish, there is a drumbeat, at which point the Gibberish stops. Osho’s voice then guides the listener into a space of deep silence, stillness, and relaxation, saying, for example, “Be silent, close your eyes… no movement of the body – feel frozen. Go inwards, deeper and deeper, just like an arrow. Penetrate all the layers and hit the center of your existence.</p>
+			<img src="images/gibberish2.webp" alt="Meditation Stage 1">
+        </div>
+
+        <!-- Third Stage -->
+        <div class="step">
+            <h2 class="step-title">Third Stage: Let-Go</h2>
+            <p class="step-description">Another drumbeat and, without arranging yourself, just allow yourself to fall down “like a bag of rice,” so you are lying, utterly still and relaxed, on your back as you are guided even more deeply into a silent stillness.</p>
+			<img src="images/gibberish3.webp" alt="Meditation Stage 1">
+        </div>
+
+        <!-- Fourth Stage -->
+        <div class="step">
+            <h2 class="step-title">Fourth Stage: Coming Back</h2>
+            <p class="step-description">At the final drumbeat, Osho’s voice guides you back to a sitting position, with the reminder to carry the glimpse of silent awareness one may have had into everyday activities.</p>
+			<img src="images/gibberish4.webp" alt="Meditation Stage 1">
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta">
+            <a href="pdf/GibberishAndLetGo.pdf">Learn More About Gibberish and Let-go Meditation</a>
+        </div>
+    </section>
+
+</body>
+
+</html>
