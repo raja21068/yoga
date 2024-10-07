@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gibberish</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>গিবরিশ এবং লেট-গো মেডিটেশন</h1>
+
+        <!-- অডিও অংশ -->
+        <audio controls>
+            <source src="mp3/gibberish-part-1.mp3" type="audio/mpeg">
+            আপনার ব্রাউজার অডিও ট্যাগটি সমর্থন করে না।
+        </audio>
+
+        <!-- অডিও ডাউনলোড -->
+        <div class="cta">
+            <a href="mp3/gibberish-part-1.mp3" download="gibberish-part-1.mp3">অডিও ডাউনলোড পার্ট 1</a>
+        </div>
+
+        <!-- অডিও অংশ -->
+        <audio controls>
+            <source src="mp3/gibberish-part-2.mp3" type="audio/mpeg">
+            আপনার ব্রাউজার অডিও ট্যাগটি সমর্থন করে না।
+        </audio>
+
+        <!-- অডিও ডাউনলোড -->
+        <div class="cta">
+            <a href="mp3/gibberish-part-2.mp3" download="gibberish-part-2.mp3">অডিও ডাউনলোড পার্ট 2</a>
+        </div>
+
+        <p><strong>এই মেডিটেশন অনুশীলনের জন্য:</strong> অডিওটি ডাউনলোড করুন এবং নিচের ধাপগুলি অনুসরণ করে শুনুন।</p>
+
+        <!-- প্রথম ধাপ -->
+        <div class="step">
+            <h2 class="step-title">প্রথম ধাপ: গিবরিশ</h2>
+            <p class="step-description">বসে বসে আপনার চোখ বন্ধ করুন এবং অর্থহীন শব্দ বলতে শুরু করুন - যে কোনও শব্দ বা শব্দ, যতক্ষণ না তাদের অর্থ নেই। যেকোন ভাষায় বলুন যা আপনি জানেন না! ভিতরে যা কিছু প্রকাশ করতে চায় তাকে বের করে দিন। মন সবসময় শব্দের মাধ্যমে চিন্তা করে এবং গিবরিশ এই ক্রমাগত ভাষায় ভাবার প্যাটার্নটি ভাঙতে সাহায্য করে। আপনার চিন্তাগুলিকে চাপা না দিয়ে তাদের প্রকাশ করতে দিন। আপনার শরীরকেও প্রকাশ হতে দিন।</p>
+            <img src="images/gibberish1.webp" alt="মেডিটেশন প্রথম ধাপ">
+        </div>
+
+        <!-- দ্বিতীয় ধাপ -->
+        <div class="step">
+            <h2 class="step-title">দ্বিতীয় ধাপ: ভিতরে যাত্রা</h2>
+            <p class="step-description">কয়েক মিনিট গিবরিশের পরে, একটি ঢোলের শব্দ শোনা যায়, তখন গিবরিশ থেমে যায়। ওশোর কণ্ঠস্বর শুনে শ্রোতাকে গভীর নীরবতা, স্থিরতা এবং প্রশান্তির জগতে নিয়ে যায়, যেমন, “নীরব থাকুন, চোখ বন্ধ করুন… শরীরের কোন নড়াচড়া নয় – জমাটবদ্ধ অনুভব করুন। তীরের মতো গভীর থেকে গভীরে যান। সমস্ত স্তর পেরিয়ে আপনার অস্তিত্বের কেন্দ্রে পৌঁছান।</p>
+            <img src="images/gibberish2.webp" alt="মেডিটেশন দ্বিতীয় ধাপ">
+        </div>
+
+        <!-- তৃতীয় ধাপ -->
+        <div class="step">
+            <h2 class="step-title">তৃতীয় ধাপ: ছেড়ে দেওয়া</h2>
+            <p class="step-description">আরও একটি ঢোলের শব্দ এবং নিজেকে সঠিকভাবে স্থাপন না করে, নিজের শরীরকে “একটি চালের বস্তার মতো” পড়ে যেতে দিন, যাতে আপনি সম্পূর্ণরূপে শান্ত এবং শিথিল হয়ে পিছনের উপর শুয়ে থাকেন এবং আরও গভীর নীরবতায় নিয়ে যাওয়া হয়।</p>
+            <img src="images/gibberish3.webp" alt="মেডিটেশন তৃতীয় ধাপ">
+        </div>
+
+        <!-- চতুর্থ ধাপ -->
+        <div class="step">
+            <h2 class="step-title">চতুর্থ ধাপ: ফিরে আসা</h2>
+            <p class="step-description">শেষ ঢোলের শব্দে, ওশোর কণ্ঠস্বর আপনাকে বসার অবস্থায় ফিরে যেতে নির্দেশ দেয় এবং দৈনন্দিন কাজে এই নীরব সচেতনতার আভা বয়ে নিয়ে যেতে মনে করিয়ে দেয়।</p>
+            <img src="images/gibberish4.webp" alt="মেডিটেশন চতুর্থ ধাপ">
+        </div>
+
+        <!-- কল টু অ্যাকশন -->
+        <div class="cta">
+            <a href="pdf/GibberishAndLetGo.pdf">গিবরিশ এবং লেট-গো মেডিটেশন সম্পর্কে আরও জানুন</a>
+        </div>
+    </section>
+
+</body>
+
+
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kundalini</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>دیواوانی مراقبہ</h1>
+
+        <p>اس ایک گھنٹے کے مراقبہ میں ایک نرم، اجنبی زبان مراقبہ کرنے والے کے ذریعے حرکت کرتی ہے اور بولتی ہے، جو ایک خالی برتن بن جاتا ہے۔ یہ گہرائی سے ذہن کو آرام دیتی ہے اور اندرونی سکون پیدا کرتی ہے۔ اگر رات کے وقت نیند سے پہلے کیا جائے، تو یہ گہری نیند بھی پیدا کرتی ہے۔</p>
+
+        <!-- آڈیو سیکشن اور ڈاؤن لوڈ کا آپشن -->
+        <p><strong>مشق کا طریقہ:</strong> آڈیو ڈاؤن لوڈ کریں اور اپنے مراقبہ کے لیے ان مراحل کو فالو کریں۔</p>
+
+        <!-- ویڈیو سیکشن -->
+        <video controls>
+            <source src="mp4/devavani.mp4" type="video/mp4">
+            آپ کا براؤزر ویڈیو ٹیگ کو سپورٹ نہیں کرتا۔
+        </video>
+        <!-- ویڈیو ڈاؤن لوڈ کریں -->
+        <div class="cta">
+            <a href="mp4/devavani.mp4" download="devavani.mp4" class="download-btn">ویڈیو ڈاؤن لوڈ کریں</a>
+        </div>
+
+        <!-- آڈیو سیکشن -->
+        <audio controls>
+            <source src="mp3/devavani.mp3" type="audio/mpeg">
+            آپ کا براؤزر آڈیو عنصر کو سپورٹ نہیں کرتا۔
+        </audio>
+
+        <!-- آڈیو ڈاؤن لوڈ کریں -->
+        <div class="cta">
+            <a href="mp3/devavani.mp3" download="devavani.mp3">آڈیو ڈاؤن لوڈ کریں</a>
+        </div>
+
+        <!-- مراقبہ کے مراحل -->
+        <div class="step">
+            <h2 class="step-title">پہلا مرحلہ: 15 منٹ</h2>
+            <p class="step-description">خاموشی سے بیٹھیں اور موسیقی سنیں۔</p>
+            <img src="images/humming.webp" alt="پہلا مرحلہ">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">دوسرا مرحلہ: 15 منٹ</h2>
+            <p class="step-description">بے معنی الفاظ نکالنا شروع کریں، جیسے "لا لا لا"، اور اس وقت تک جاری رکھیں جب تک اجنبی الفاظ جیسے آوازیں نمودار نہ ہوں۔ یہ آوازیں دماغ کے اُس حصے سے آتی ہیں جو بچپن میں الفاظ سیکھنے سے پہلے استعمال ہوتا تھا۔</p>
+            <img src="images/lalala.webp" alt="دوسرا مرحلہ">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">تیسرا مرحلہ: 15 منٹ</h2>
+            <p class="step-description">کھڑے ہوجائیں اور اس اجنبی زبان کو جاری رکھیں، اپنے جسم کو آواز کے ساتھ ہلکا ہلکا حرکت کرنے دیں۔</p>
+            <img src="images/unfamiliar-language.webp" alt="تیسرا مرحلہ">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">چوتھا مرحلہ: 15 منٹ</h2>
+            <p class="step-description">لیٹ جائیں اور پرسکون رہیں۔ ہر خیال کو چھوڑ دیں اور گہری آرام میں ڈوب جائیں، اور مراقبہ کے دوران پیدا ہونے والی توانائی اور سکون کو جذب کریں۔</p>
+            <img src="images/sleep.webp" alt="چوتھا مرحلہ">
+        </div>
+
+        <!-- مزید معلومات -->
+        <div class="cta">
+            <a href="pdf/OshoDevavani.pdf">دیواوانی مراقبہ کے بارے میں مزید جانیں</a>
+        </div>
+    </section>
+
+</body>
+
+
+</html>

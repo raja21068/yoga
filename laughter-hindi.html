@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laughter</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>हँसी ध्यान</h1>
+
+        <!-- वीडियो अनुभाग -->
+        <video controls>
+            <source src="mp4/laughter.mp4" type="video/mp4">
+            आपका ब्राउज़र वीडियो टैग का समर्थन नहीं करता।
+        </video>
+        <!-- वीडियो डाउनलोड करें -->
+        <div class="cta">
+            <a href="mp4/laughter.mp4" download="laughter.mp4" class="download-btn">वीडियो डाउनलोड करें</a>
+        </div>
+
+        <!-- ऑडियो अनुभाग और डाउनलोड विकल्प -->
+        <p><strong>इस ध्यान का अभ्यास कैसे करें:</strong> ऑडियो डाउनलोड करें और निम्नलिखित चरणों का पालन करते हुए सुनें।</p>
+
+        <!-- ऑडियो अनुभाग -->
+        <audio controls>
+            <source src="mp3/laughfter.mp3" type="audio/mpeg">
+            आपका ब्राउज़र ऑडियो तत्व का समर्थन नहीं करता।
+        </audio>
+
+        <!-- ऑडियो डाउनलोड करें -->
+        <div class="cta">
+            <a href="mp3/laughfter.mp3" download="laughfter.mp3">ऑडियो डाउनलोड करें</a>
+        </div>
+
+        <p><strong>अभ्यास का अवलोकन:</strong> ओशो हँसी ध्यान एक आनंदमय अभ्यास है जो तनाव को दूर करने और आंतरिक शांति को बढ़ावा देने के लिए डिज़ाइन किया गया है। इसमें तीन मुख्य चरण होते हैं जो प्रतिभागियों को हँसी से लेकर ग्राउंडिंग और फिर नृत्य के माध्यम से स्वतंत्र अभिव्यक्ति की ओर ले जाते हैं।</p>
+
+        <!-- पहला चरण: हँसी -->
+        <div class="step">
+            <h2>पहला चरण: हँसी (20 मिनट)</h2>
+            <p>आराम से बैठें, आँखें बंद करें और हँसी को स्वाभाविक रूप से बहने दें। खुद को बिना किसी रोक-टोक के हँसने दें, छोटी हँसी से शुरू करें और इसे बढ़ने दें। महसूस करें कि हँसी आपके पूरे शरीर में गूंज रही है, जिससे हल्कापन और राहत की स्थिति बनती है।</p>
+            <img src="images/laughter1.jpeg" alt="पहला चरण: हँसी">
+        </div>
+
+        <!-- दूसरा चरण: ग्राउंडिंग -->
+        <div class="step">
+            <h2>दूसरा चरण: ग्राउंडिंग (20 मिनट)</h2>
+            <p>अपने पेट के बल लेटें और जमीन के संपर्क में पूरी तरह से रहें। गहरी सांस लेने पर ध्यान केंद्रित करें और पृथ्वी को किसी भी शेष तनाव को अवशोषित करने दें। कल्पना करें कि आप जमीन के साथ मिल रहे हैं, और इससे पूरी तरह से जुड़े और समर्थित महसूस कर रहे हैं।</p>
+            <img src="images/sleep-back.png" alt="दूसरा चरण: ग्राउंडिंग">
+        </div>
+
+        <!-- तीसरा चरण: स्वतंत्र नृत्य -->
+        <div class="step">
+            <h2>तीसरा चरण: नृत्य और स्वतंत्रता (20 मिनट)</h2>
+            <p>खड़े हो जाएं और स्वतंत्र रूप से नृत्य करना शुरू करें, हँसी और ग्राउंडिंग के माध्यम से छोड़ी गई ऊर्जा को व्यक्त करें। आंदोलनों को सहज और आनंदमय होने दें, नृत्य करें जब तक आप पूरी तरह से आराम और केंद्रित महसूस न करें।</p>
+            <img src="images/6.webp" alt="तीसरा चरण: नृत्य और स्वतंत्रता">
+        </div>
+
+    </section>
+
+</body>
+
+
+
+</html>

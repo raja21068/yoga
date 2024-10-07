@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laughter</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>笑いの瞑想</h1>
+
+        <!-- ビデオセクション -->
+        <video controls>
+            <source src="mp4/laughter.mp4" type="video/mp4">
+            お使いのブラウザはビデオタグをサポートしていません。
+        </video>
+        <!-- ビデオダウンロード -->
+        <div class="cta">
+            <a href="mp4/laughter.mp4" download="laughter.mp4" class="download-btn">ビデオをダウンロード</a>
+        </div>
+
+        <!-- オーディオセクションとダウンロードオプション -->
+        <p><strong>この瞑想を練習するには:</strong> オーディオをダウンロードして、以下の手順に従いながら聞いてください。</p>
+
+        <!-- オーディオセクション -->
+        <audio controls>
+            <source src="mp3/laughfter.mp3" type="audio/mpeg">
+            お使いのブラウザはオーディオ要素をサポートしていません。
+        </audio>
+
+        <!-- オーディオダウンロード -->
+        <div class="cta">
+            <a href="mp3/laughfter.mp3" download="laughfter.mp3">オーディオをダウンロード</a>
+        </div>
+
+        <p><strong>練習概要:</strong> オショーの笑いの瞑想は、ストレスを解消し、内面の平和を促進するために設計された楽しい練習です。笑いから地面との接続、そして自由な表現へと導く三つの主要な段階があります。</p>
+
+        <!-- 第一段階: 笑い -->
+        <div class="step">
+            <h2>第一段階: 笑い (20分)</h2>
+            <p>快適に座り、目を閉じ、自然に笑いが流れるようにします。軽い笑いから始めて、それが増していくのを感じてください。笑いが全身に響き、軽やかさと開放感をもたらします。</p>
+            <img src="images/laughter1.jpeg" alt="第一段階: 笑い">
+        </div>
+
+        <!-- 第二段階: グラウンディング -->
+        <div class="step">
+            <h2>第二段階: グラウンディング (20分)</h2>
+            <p>お腹を地面につけて横になります。深呼吸に集中し、残りの緊張が地面に吸収されるのを感じてください。</p>
+            <img src="images/sleep-back.png" alt="第二段階: グラウンディング">
+        </div>
+
+        <!-- 第三段階: 自由なダンス -->
+        <div class="step">
+            <h2>第三段階: ダンスと自由 (20分)</h2>
+            <p>立ち上がり、笑いとグラウンディングで生まれたエネルギーを自由に表現するように踊り始めます。</p>
+            <img src="images/6.webp" alt="第三段階: ダンスと自由">
+        </div>
+
+    </section>
+
+</body>
+
+
+</html>
