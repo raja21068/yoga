@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourishankar Meditation</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>ゴウリシャンカル瞑想</h1>
+
+        <p>ゴウリシャンカル瞑想は、第三の目に働きかける強力な集中テクニックです。この瞑想は4つのステージで構成されており、各ステージは15分ずつです。最初の2つのステージは、3つ目のステージでの自然な体験のために瞑想者を準備します。最初のステージで正しく呼吸が行われれば、瞑想者はゴウリシャンカル（エベレスト山）にいるように感じると言われています。</p>
+
+        <!-- ビデオセクション -->
+        <video controls>
+            <source src="mp4/gourishankar.mp4" type="video/mp4">
+            お使いのブラウザはビデオタグをサポートしていません。
+        </video>
+        <!-- ビデオダウンロード -->
+        <div class="cta">
+            <a href="mp4/gourishankar.mp4" download="gourishankar_meditation_video.mp4" class="download-btn">ビデオをダウンロード</a>
+        </div>
+
+        <!-- オーディオセクションとダウンロードオプション -->
+        <p><strong>この瞑想を練習するには:</strong> オーディオをダウンロードし、以下のステップに従って聞いてください。</p>
+
+        <!-- オーディオセクション -->
+        <audio controls>
+            <source src="mp3/Gourishankar.mp3" type="audio/mpeg">
+            お使いのブラウザはオーディオ要素をサポートしていません。
+        </audio>
+
+        <!-- オーディオダウンロード -->
+        <div class="cta">
+            <a href="mp3/Gourishankar.mp3" download="gourishankar.mp3">オーディオをダウンロード</a>
+        </div>
+
+        <!-- 瞑想のステップ -->
+        <div class="step">
+            <h2 class="step-title">1. 第1ステージ: 15分</h2>
+            <p class="step-description">
+                目を閉じて座り、鼻から深く息を吸い、肺を満たし、できるだけ長く息を止めます。その後、口からゆっくりと息を吐き、できるだけ長く肺を空に保ちます。このサイクルを繰り返します。
+            </p>
+            <img src="images/shankar1.webp" alt="第1ステージ画像">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. 第2ステージ: 15分</h2>
+            <p class="step-description">
+                通常の呼吸に戻ります。柔らかく目をそらさず、炎や青い点滅する（ストロボ）光を見つめます。このプロセス中は静止したままです。
+            </p>
+            <p class="step-description">
+                <strong>注意1:</strong> 神経障害を持つ人（てんかんなど）は、この瞑想でストロボや点滅する光を使用してはいけません。代わりに、目隠しをして第2ステージを行うことができます。
+            </p>
+            <p class="step-description">
+                <strong>注意2:</strong> この瞑想の第2ステージの音楽には、通常の心拍の7倍のリズムが含まれています。可能であれば、点滅する光は1分あたり490回の周波数で同期したストロボライトを使用する必要があります。ストロボライトがない場合は、ろうそくを使用することができます。
+            </p>
+            <img src="images/shankar2.webp" alt="第2ステージ画像">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. 第3ステージ: 15分</h2>
+            <p class="step-description">
+                目を閉じたまま立ち、体を緩めて受け入れられる状態にします。体内の微細なエネルギーが、通常の制御を超えて体を動かします。意図的に動かず、動きが自然に起こるようにします。
+            </p>
+            <img src="images/shankar3.webp" alt="第3ステージ画像">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">4. 第4ステージ: 15分</h2>
+            <p class="step-description">
+                目を閉じたまま横になり、静止します。静寂の状態に入り、観察が自然に起こるようにします。
+            </p>
+            <img src="images/sleep.webp" alt="第4ステージ画像">
+        </div>
+
+        <!-- 行動を促す呼びかけ -->
+        <div class="cta">
+            <a href="pdf/Gourishankar.pdf">ゴウリシャンカル瞑想について詳しく学ぶ</a>
+        </div>
+    </section>
+
+</body>
+
+
+</html>

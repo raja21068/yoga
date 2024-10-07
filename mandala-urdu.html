@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandala Meditation</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>مانڈالا مراقبہ</h1>
+
+        <p>مانڈالا مراقبہ ایک طاقتور، جذباتی صفائی کی تکنیک ہے جو قدرتی مرکزیت کے لئے توانائی کا ایک دائرہ بناتی ہے۔ اس مراقبہ میں چار مراحل شامل ہیں، جن میں سے ہر ایک 15 منٹ کا ہوتا ہے۔ یہ عمل مراقبہ کرنے والے کو ذہن کی دائرہ دار فطرت کے بارے میں آگاہی دینے اور جذبات اور خیالات کے مسلسل چکروں کو توڑنے میں مدد کرتا ہے۔</p>
+
+        <!-- ویڈیو سیکشن -->
+        <video controls>
+            <source src="mp4/mandala.mp4" type="video/mp4">
+            آپ کا براؤزر ویڈیو ٹیگ کو سپورٹ نہیں کرتا۔
+        </video>
+        <!-- ویڈیو ڈاؤن لوڈ کریں -->
+        <div class="cta">
+            <a href="mp4/mandala.mp4" download="mandala_meditation_video.mp4" class="download-btn">ویڈیو ڈاؤن لوڈ کریں</a>
+        </div>
+
+        <!-- آڈیو سیکشن اور ڈاؤن لوڈ کا آپشن -->
+        <p><strong>اس مراقبے کو کرنے کے لئے:</strong> آڈیو ڈاؤن لوڈ کریں اور نیچے دیے گئے مراحل کے ساتھ سنتے رہیں۔</p>
+
+        <!-- آڈیو سیکشن -->
+        <audio controls>
+            <source src="mp3/Mandala.mp3" type="audio/mpeg">
+            آپ کا براؤزر آڈیو عنصر کو سپورٹ نہیں کرتا۔
+        </audio>
+
+        <!-- آڈیو ڈاؤن لوڈ کریں -->
+        <div class="cta">
+            <a href="mp3/Mandala.mp3" download="Mandala.mp3">آڈیو ڈاؤن لوڈ کریں</a>
+        </div>
+
+        <!-- مراقبے کے مراحل -->
+        <div class="step">
+            <h2 class="step-title">1. پہلا مرحلہ: 15 منٹ</h2>
+            <p class="step-description">
+                آنکھیں کھول کر، جگہ پر دوڑیں۔ آہستہ شروع کریں اور رفتار کو بتدریج بڑھائیں۔ اپنے گھٹنوں کو جتنا ممکن ہو اونچا اٹھائیں۔ گہری اور یکساں سانس لیں تاکہ آپ کے اندر توانائی حرکت کر سکے۔ دماغ اور جسم کو بھول کر دوڑتے رہیں۔
+            </p>
+            <img src="images/mandala1.webp" alt="پہلا مرحلہ تصویر">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. دوسرا مرحلہ: 15 منٹ</h2>
+            <p class="step-description">
+                آنکھیں بند کرکے اور منہ کو کھلا اور ڈھیلا چھوڑ کر بیٹھ جائیں۔ اپنے جسم کو کمر سے آہستہ سے گھمائیں، جیسے ہوا میں ہلنے والا سرکنڈا۔ اپنے آپ کو ایک طرف سے دوسری طرف، آگے اور پیچھے حرکت کرتے ہوئے محسوس کریں۔ اس سے آپ کی بیدار توانائی ناف کے مرکز تک پہنچ جائے گی۔
+            </p>
+            <img src="images/mandala2.webp" alt="دوسرا مرحلہ تصویر">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. تیسرا مرحلہ: 15 منٹ</h2>
+            <p class="step-description">
+                اپنی پیٹھ کے بل لیٹ جائیں اور آنکھیں کھلی رکھیں۔ اپنے سر کو بالکل ساکن رکھیں اور اپنی آنکھوں کو گھڑی کی سمت میں گھمائیں۔ انہیں ان کی جگہوں میں مکمل طور پر گھمائیں جیسے آپ کسی بڑی گھڑی کی سیکنڈ کی سوئی کی پیروی کر رہے ہوں۔ یہ جتنا ممکن ہو تیزی سے کریں، اور منہ کو کھلا اور جبڑے کو ڈھیلا رکھیں۔ آہستہ اور یکساں سانس لیں۔ اس سے آپ کی توانائی تیسری آنکھ میں مرکوز ہو جائے گی۔
+            </p>
+            <img src="images/mandala3.webp" alt="تیسرا مرحلہ تصویر">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">4. چوتھا مرحلہ: 15 منٹ</h2>
+            <p class="step-description">
+                اپنی آنکھیں بند کریں اور بالکل ساکن رہیں۔ خاموشی کی حالت میں داخل ہوں اور تجربے کو ضم ہونے دیں۔
+            </p>
+            <img src="images/sleep.webp" alt="چوتھا مرحلہ تصویر">
+        </div>
+
+        <!-- عمل کی دعوت -->
+        <div class="cta">
+            <a href="pdf/mandala.pdf">مانڈالا مراقبے کے بارے میں مزید جانیں</a>
+        </div>
+    </section>
+
+</body>
+
+
+</html>

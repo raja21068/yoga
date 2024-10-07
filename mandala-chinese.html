@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandala Meditation</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>曼陀罗冥想</h1>
+
+        <p>曼陀罗冥想是一种强大、宣泄性的技术，通过创建一个能量的圆圈帮助自然的中心化。此冥想分为四个阶段，每个阶段持续15分钟。这个过程帮助冥想者意识到心灵的循环性，打破情绪和思想的连续循环。</p>
+
+        <!-- 视频部分 -->
+        <video controls>
+            <source src="mp4/mandala.mp4" type="video/mp4">
+            您的浏览器不支持视频标签。
+        </video>
+        <!-- 下载视频 -->
+        <div class="cta">
+            <a href="mp4/mandala.mp4" download="mandala_meditation_video.mp4" class="download-btn">下载视频</a>
+        </div>
+        
+        <!-- 音频部分及下载选项 -->
+        <p><strong>练习此冥想：</strong> 下载音频并在以下步骤中跟随音频进行练习。</p>
+
+        <!-- 音频部分 -->
+        <audio controls>
+            <source src="mp3/Mandala.mp3" type="audio/mpeg">
+            您的浏览器不支持音频元素。
+        </audio>
+
+        <!-- 下载音频 -->
+        <div class="cta">
+            <a href="mp3/Mandala.mp3" download="Mandala.mp3">下载音频</a>
+        </div>
+
+        <!-- 冥想步骤 -->
+        <div class="step">
+            <h2 class="step-title">1. 第一步：15分钟</h2>
+            <p class="step-description">
+                睁开眼睛，原地跑步。慢慢开始，逐渐加快速度。尽量把膝盖抬高。深而均匀地呼吸，激活体内的能量。忘记大脑和身体，继续跑步。
+            </p>
+            <img src="images/mandala1.webp" alt="第一阶段图片">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. 第二步：15分钟</h2>
+            <p class="step-description">
+                闭上眼睛，嘴巴微张放松。轻轻地从腰部开始旋转身体，像风中的芦苇一样摇摆。感觉自己被左右、前后地移动。这将把唤醒的能量带到脐轮中心。
+            </p>
+            <img src="images/mandala2.webp" alt="第二阶段图片">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. 第三步：15分钟</h2>
+            <p class="step-description">
+                仰面躺下，睁开眼睛。保持头部静止，顺时针转动眼球。让眼球在眼眶中尽可能快地转动，就像追随巨大时钟的秒针一样。同时保持嘴巴微张，下巴放松。轻柔、均匀地呼吸。这将把集中能量带到第三眼位置。
+            </p>
+            <img src="images/mandala3.webp" alt="第三阶段图片">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">4. 第四步：15分钟</h2>
+            <p class="step-description">
+                闭上眼睛，保持静止。进入一种静默状态，让这一切体验自然融合。
+            </p>
+            <img src="images/sleep.webp" alt="第四阶段图片">
+        </div>
+
+        <!-- 行动号召 -->
+        <div class="cta">
+            <a href="pdf/mandala.pdf">了解更多关于曼陀罗冥想的信息</a>
+        </div>
+    </section>
+
+</body>
+
+
+</html>

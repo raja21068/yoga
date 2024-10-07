@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Dimensions Meditation</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>无维度冥想</h1>
+
+        <p>无维度冥想是一种以中心为导向的舞蹈，也是旋转冥想的准备阶段。它起源于古尔吉耶夫的动作练习，持续一小时，分为三个阶段。第一阶段是配合呼吸的动作，第二阶段是旋转，第三阶段是闭眼躺下以便能量整合。</p>
+
+        <!-- 视频部分 -->
+        <video controls>
+            <source src="mp4/nodimension.mp4" type="video/mp4">
+            您的浏览器不支持视频标签。
+        </video>
+        <!-- 下载视频 -->
+        <div class="cta">
+            <a href="mp4/nodimension.mp4" download="no_dimensions_meditation_video.mp4" class="download-btn">下载视频</a>
+        </div>
+
+        <!-- 音频部分及下载选项 -->
+        <p><strong>练习此冥想：</strong> 下载音频并在以下步骤中跟随音频进行练习。</p>
+
+        <!-- 音频部分 -->
+        <audio controls>
+            <source src="mp3/no-dimensions.mp3" type="audio/mpeg">
+            您的浏览器不支持音频元素。
+        </audio>
+
+        <!-- 下载音频 -->
+        <div class="cta">
+            <a href="mp3/no-dimensions.mp3" download="nodimension.mp3">下载音频</a>
+        </div>
+
+        <div class="step">
+            <img src="images/OSHO-No-Dimensions_s.jpg" alt="第一阶段图片">
+        </div>
+
+        <!-- 冥想步骤 -->
+        <div class="step">
+            <h2 class="step-title">1. 第一阶段：30分钟</h2>
+            <p class="step-description">
+                六个动作组成的舞蹈，持续重复30分钟。双手放在腹部，按照以下步骤进行：
+            </p>
+            <ul class="step-description">
+                <li><strong>1.</strong> 从鼻子吸气，将双手移至心脏处。呼气时，右手臂和右脚向前移动，同时左手回到腹部。然后恢复到原来的姿势。</li>
+                <li><strong>2.</strong> 重复动作，左手臂和左脚向前移动，右手回到腹部。恢复到原来的姿势。</li>
+                <li><strong>3.</strong> 吸气，右手臂和右脚向右侧90度转动。</li>
+                <li><strong>4.</strong> 重复此动作，左手臂和左脚向左侧90度转动。</li>
+                <li><strong>5.</strong> 吸气，右手臂和右脚向后180度转动。</li>
+                <li><strong>6.</strong> 重复此动作，左手臂和左脚向后180度转动。</li>
+            </ul>
+            <p class="step-description">始终从你的中心（丹田）开始动作，并使用音乐保持正确的节奏。舞蹈应持续流动，并随着时间的推移而增加强度。如果你的身体自然倒下，也没关系。</p>
+            <img src="images/no-dimension1.jpg" alt="第一阶段图片">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. 第二阶段：旋转（15分钟）</h2>
+            <p class="step-description">逆时针旋转，保持眼睛微微睁开，双臂伸展。让旋转带动你，呼吸正常。如果有必要，可以调整方向并慢慢减速结束旋转。</p>
+            <img src="images/whirling.jpg" alt="旋转图片">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. 第三阶段：静默（15分钟）</h2>
+            <p class="step-description">闭上眼睛，最好趴着躺下。让见证发生，简单地观察你体内的能量流动。</p>
+            <img src="images/sleep.webp" alt="静默图片">
+        </div>
+
+        <!-- 行动号召 -->
+        <div class="cta">
+            <a href="pdf/no-dimensions.pdf">了解更多关于无维度冥想的信息</a>
+        </div>
+    </section>
+
+</body>
+
+
+</html>

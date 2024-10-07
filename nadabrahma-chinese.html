@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadabrahma</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>纳达梵摩冥想</h1>
+
+        <p>纳达梵摩冥想是一种古老的西藏练习，通过嗡嗡声和手部动作在身体与心灵之间带来和谐。它旨在通过声音和振动将你与内在自我连接，最终带来深刻的平衡与宁静感。</p>
+
+        <!-- 视频部分 -->
+        <video controls>
+            <source src="mp4/nadarahma.mp4" type="video/mp4">
+            您的浏览器不支持视频标签。
+        </video>
+        <!-- 下载视频 -->
+        <div class="cta">
+            <a href="mp4/nadarahma.mp4" download="dynamic_meditation_video.mp4" class="download-btn">下载视频</a>
+        </div>
+
+        <!-- 音频部分及下载选项 -->
+        <p><strong>练习此冥想：</strong> 下载音频并在以下步骤中跟随音频进行练习。</p>
+
+        <!-- 音频部分 -->
+        <audio controls>
+            <source src="mp3/Nadabrama.mp3" type="audio/mpeg">
+            您的浏览器不支持音频元素。
+        </audio>
+
+        <!-- 下载音频 -->
+        <div class="cta">
+            <a href="mp3/Nadabrama.mp3" download="Nadabrama.mp3">下载音频</a>
+        </div>
+
+        <!-- 冥想步骤 -->
+        <div class="step">
+            <h2 class="step-title">1. 准备</h2>
+            <p class="step-description">找一个安静舒适的地方冥想。以放松的姿势坐下，保持脊椎挺直，双手放在腿上。闭上眼睛，做几次深呼吸以放松身心。</p>
+            <img src="images/1.webp" alt="准备阶段图片">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. 第一步：嗡鸣（30分钟）</h2>
+            <p class="step-description">开始发出嗡鸣声，如“mmm”或“aaa”，声音足够大以在体内产生振动。让声音在你体内共鸣。到某个时刻，嗡鸣会自然而然地继续，而你只需聆听这些振动。</p>
+            <img src="images/humming.webp" alt="嗡鸣阶段图片">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. 第二步：手部动作（15分钟）</h2>
+
+            <!-- 子步骤 1 -->
+            <h3 class="step-title">3.1 前半部分（7.5分钟）：给予能量</h3>
+            <p class="step-description">前7.5分钟，双手掌心朝上，以缓慢的圆形动作向外移动。动作从肚脐处开始，然后将双手向外伸展，仿佛你在将能量给予宇宙。保持动作温和缓慢。</p>
+            <img src="images/nadabrama-meditation-4.jpg" alt="给予能量图片">
+
+            <!-- 子步骤 2 -->
+            <h3 class="step-title">3.2 后半部分（7.5分钟）：接收能量</h3>
+            <p class="step-description">接下来的7.5分钟，反转动作，手掌向下，缓慢将双手收回身体。想象从宇宙接收能量，专注于能量流入你体内的感觉。</p>
+            <img src="images/back.png" alt="接收能量图片">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">4. 第三步：放松（15分钟）</h2>
+            <p class="step-description">在最后阶段，停止所有动作，静坐不动。观察你体内的能量和振动，享受深度放松与内心和谐的状态。</p>
+            <img src="images/witness.webp" alt="放松阶段图片">
+        </div>
+
+        <!-- 行动号召 -->
+        <div class="cta">
+            <a href="pdf/Nadabrahma.pdf">了解更多关于纳达梵摩冥想的信息</a>
+        </div>
+    </section>
+
+</body>
+
+</html>

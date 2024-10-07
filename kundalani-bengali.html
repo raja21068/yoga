@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kundalini</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>কুণ্ডলিনী ধ্যান</h1>
+
+        <p>কুণ্ডলিনী ধ্যান একটি আধ্যাত্মিক অনুশীলন যা বিভিন্ন ঐতিহ্যে, যেমন হিন্দুধর্ম, তন্ত্র এবং শিখধর্মে ভিত্তি করে। এটি শরীরের শক্তি জাগ্রত এবং পরিচালনার জন্য নিখুঁত শ্বাসপ্রশ্বাস, আন্দোলন এবং ধ্যানকে একত্রিত করে। নিচে একটি সম্পূর্ণ কুণ্ডলিনী ধ্যান সেশনের ধাপগুলি দেওয়া হল।</p>
+
+        <!-- ভিডিও অংশ -->
+        <video controls>
+            <source src="mp4/kundalini.mp4" type="video/mp4">
+            আপনার ব্রাউজার ভিডিও ট্যাগ সমর্থন করে না।
+        </video>
+        <!-- ভিডিও ডাউনলোড -->
+        <div class="cta">
+            <a href="mp4/kundalini.mp4" download="dynamic_meditation_video.mp4" class="download-btn">ভিডিও ডাউনলোড করুন</a>
+        </div>
+        
+        <!-- অডিও অংশ এবং ডাউনলোড অপশন -->
+        <p><strong>এই ধ্যানের অনুশীলন করতে:</strong> অডিও ডাউনলোড করুন এবং নিচের ধাপগুলি অনুসরণ করার সময় শুনুন।</p>
+
+        <!-- অডিও অংশ -->
+        <audio controls>
+            <source src="mp3/Kundalini.mp3" type="audio/mpeg">
+            আপনার ব্রাউজার অডিও এলিমেন্ট সমর্থন করে না।
+        </audio>
+
+        <!-- অডিও ডাউনলোড -->
+        <div class="cta">
+            <a href="mp3/Kundalini.mp3" download="Kundalini.mp3">অডিও ডাউনলোড করুন</a>
+        </div>
+
+        <!-- ধ্যানের ধাপ -->
+        <div class="step">
+            <h2 class="step-title">1. শিথিল হোন এবং পুরো শরীর কাঁপান (15 মিনিট)</h2>
+            <p class="step-description">শিথিল হয়ে দাঁড়ান এবং পুরো শরীর কাঁপতে দিন। আপনার পা থেকে শক্তির প্রবাহ অনুভব করুন এবং সম্পূর্ণভাবে ছেড়ে দিন। আপনি চোখ খোলা বা বন্ধ রাখতে পারেন, এবং কম্পনটি স্বাভাবিকভাবে ঘটতে দিন, এটি জোর করে করবেন না।</p>
+            <img src="images/shaking.webp" alt="পুরো শরীর কাঁপানোর ছবি">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. স্বাধীনভাবে নাচুন (15 মিনিট)</h2>
+            <p class="step-description">আপনি যেমন অনুভব করেন তেমন নাচুন। আপনার পুরো শরীরকে কোনোরকম বাধা ছাড়াই স্বাভাবিকভাবে নড়তে দিন। আপনার চোখ খোলা বা বন্ধ থাকুক, কোনো চাপ ছাড়াই স্বাভাবিকভাবে আসা গতিবিধিগুলোকে হতে দিন।</p>
+            <img src="images/dance.webp" alt="নাচের ছবি">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. সাক্ষী হন (15 মিনিট)</h2>
+            <p class="step-description">চোখ বন্ধ করে স্থির হয়ে বসুন বা দাঁড়ান। আপনার ভিতরে এবং বাইরে যা ঘটছে তা পর্যবেক্ষণ করুন এবং শুধুমাত্র দেখুন। শক্তি এবং অনুভূতিগুলিকে প্রবাহিত হতে দিন, এবং কোনো রায় বা হস্তক্ষেপ ছাড়াই শুধুমাত্র একজন সাক্ষী হয়ে থাকুন।</p>
+            <img src="images/witness.webp" alt="সাক্ষী হওয়ার ছবি">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">4. স্থিরতা এবং বিশ্রাম (15 মিনিট)</h2>
+            <p class="step-description">এই শেষ ধাপে, চোখ বন্ধ করে শুয়ে পড়ুন এবং সম্পূর্ণভাবে স্থির থাকুন। কোনো চিন্তা না করে গভীরভাবে বিশ্রাম করুন এবং ধ্যান চলাকালীন উৎপন্ন শক্তি এবং প্রশান্তি শোষণ করুন।</p>
+            <img src="images/stillness.webp" alt="স্থিতির ছবি">
+        </div>
+
+        <!-- অতিরিক্ত কুণ্ডলিনী ধ্যান ব্যাখ্যা -->
+        <div class="step">
+            <h2 class="step-title">প্রথম ধাপের নির্দেশিকা: কম্পন স্বাভাবিকভাবে হতে দিন</h2>
+            <p class="step-description">কুণ্ডলিনী ধ্যান করার সময়, কম্পনটি জোর করবেন না। চুপচাপ দাঁড়ান এবং এটি স্বাভাবিকভাবে হতে দিন। যদি আপনার শরীর কম্পন শুরু করে তবে এটি প্রবাহিত হতে দিন এবং এটি নিয়ন্ত্রণ করবেন না। কম্পনের আনন্দ অনুভব করুন এবং এটি পরিচালনা করার চেষ্টা করবেন না। আপনি যত বেশি শিথিল হবেন এবং প্রক্রিয়াটি উপভোগ করবেন, ধ্যান ততই স্বাভাবিক এবং কার্যকর হবে।</p>
+        </div>
+
+        <!-- অ্যাকশনের জন্য কল -->
+        <div class="cta">
+            <a href="pdf/Kundalini.pdf">কুণ্ডলিনী ধ্যান সম্পর্কে আরও জানুন</a>
+        </div>
+    </section>
+
+</body>
+
+
+</html>

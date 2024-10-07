@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadabrahma</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>نادابراہما مراقبہ</h1>
+
+        <p>نادابراہما مراقبہ ایک قدیم تبتی مشق ہے جہاں گونجنے والی آوازیں اور ہاتھوں کی حرکات جسم اور دماغ کے درمیان ہم آہنگی پیدا کرتی ہیں۔ اس کا مقصد آواز اور ارتعاش کے ذریعے آپ کو اپنے اندرونی وجود سے جوڑنا ہے، جس کے نتیجے میں گہرا توازن اور سکون کا احساس پیدا ہوتا ہے۔</p>
+
+        <!-- ویڈیو سیکشن -->
+        <video controls>
+            <source src="mp4/nadarahma.mp4" type="video/mp4">
+            آپ کا براؤزر ویڈیو ٹیگ کو سپورٹ نہیں کرتا۔
+        </video>
+        <!-- ویڈیو ڈاؤن لوڈ کریں -->
+        <div class="cta">
+            <a href="mp4/nadarahma.mp4" download="dynamic_meditation_video.mp4" class="download-btn">ویڈیو ڈاؤن لوڈ کریں</a>
+        </div>
+
+        <!-- آڈیو سیکشن اور ڈاؤن لوڈ کا آپشن -->
+        <p><strong>اس مراقبے کو کرنے کے لئے:</strong> آڈیو ڈاؤن لوڈ کریں اور نیچے دیے گئے مراحل کے ساتھ سنتے رہیں۔</p>
+
+        <!-- آڈیو سیکشن -->
+        <audio controls>
+            <source src="mp3/Nadabrama.mp3" type="audio/mpeg">
+            آپ کا براؤزر آڈیو عنصر کو سپورٹ نہیں کرتا۔
+        </audio>
+
+        <!-- آڈیو ڈاؤن لوڈ کریں -->
+        <div class="cta">
+            <a href="mp3/Nadabrama.mp3" download="Nadabrama.mp3">آڈیو ڈاؤن لوڈ کریں</a>
+        </div>
+
+        <!-- مراقبے کے مراحل -->
+        <div class="step">
+            <h2 class="step-title">1. تیاری</h2>
+            <p class="step-description">مراقبہ کے لیے ایک پرسکون اور آرام دہ جگہ تلاش کریں۔ آرام دہ پوزیشن میں بیٹھیں، اپنی ریڑھ کی ہڈی کو سیدھا رکھیں، اور اپنے ہاتھوں کو اپنی گود میں رکھیں۔ اپنی آنکھیں بند کریں اور آرام کرنے کے لیے کچھ گہری سانسیں لیں۔</p>
+            <img src="images/1.webp" alt="تیاری کی تصویر">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. مرحلہ 1: گونجنا (30 منٹ)</h2>
+            <p class="step-description">"ممم" یا "آآآ" جیسی آواز نکالنا شروع کریں، اتنی بلند کہ آپ کے جسم میں ارتعاش پیدا ہو۔ آواز کو آپ کے اندر گونجنے دیں۔ ایک لمحہ آئے گا جب گونجنا خود بخود جاری رہے گا اور آپ صرف ارتعاش کو سنیں گے۔</p>
+            <img src="images/humming.webp" alt="گونج کی تصویر">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. مرحلہ 2: ہاتھوں کی حرکات (15 منٹ)</h2>
+
+            <!-- ذیلی مرحلہ 1 -->
+            <h3 class="step-title">3.1 پہلا نصف (7.5 منٹ): توانائی دینا</h3>
+            <p class="step-description">پہلے 7.5 منٹ کے لئے، اپنے ہاتھوں کو اوپر کی طرف رکھتے ہوئے آہستہ آہستہ دائروی حرکات میں باہر کی طرف لے جائیں۔ حرکت کو ناف سے شروع کریں، پھر اپنے ہاتھوں کو باہر کی طرف بڑھائیں جیسے آپ کائنات کو توانائی دے رہے ہیں۔ اپنی حرکات کو نرم اور آہستہ رکھیں۔</p>
+            <img src="images/nadabrama-meditation-4.jpg" alt="توانائی دینے کی تصویر">
+
+            <!-- ذیلی مرحلہ 2 -->
+            <h3 class="step-title">3.2 دوسرا نصف (7.5 منٹ): توانائی لینا</h3>
+            <p class="step-description">اگلے 7.5 منٹ کے لیے، اپنے ہاتھوں کو نیچے کی طرف کرتے ہوئے آہستہ آہستہ اپنے جسم کی طرف واپس لائیں۔ تصور کریں کہ آپ کائنات سے توانائی حاصل کر رہے ہیں اور توانائی کے آپ کے جسم میں بہنے کے احساس پر توجہ مرکوز کریں۔</p>
+            <img src="images/back.png" alt="توانائی لینے کی تصویر">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">4. مرحلہ 3: آرام (15 منٹ)</h2>
+            <p class="step-description">آخری مرحلے میں، تمام حرکات کو روک دیں اور سکون سے بیٹھیں۔ اپنے اندر کی توانائی اور ارتعاش کا مشاہدہ کریں اور گہرے آرام اور اندرونی ہم آہنگی کی حالت سے لطف اندوز ہوں۔</p>
+            <img src="images/witness.webp" alt="آرام کی تصویر">
+        </div>
+
+        <!-- عمل کی دعوت -->
+        <div class="cta">
+            <a href="pdf/Nadabrahma.pdf">نادابراہما مراقبہ کے بارے میں مزید جانیں</a>
+        </div>
+    </section>
+
+</body>
+
+
+</html>

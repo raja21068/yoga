@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kundalini</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>تأمل الكونداليني</h1>
+
+        <p>تأمل الكونداليني هو ممارسة روحية متجذرة في تقاليد مختلفة، بما في ذلك الهندوسية، التنترا والسيخية. يجمع هذا التأمل بين التنفس المركّز والحركة والتأمل لإيقاظ وتوجيه طاقة الجسم. فيما يلي خطوات جلسة تأمل الكونداليني الكاملة.</p>
+
+        <!-- قسم الفيديو -->
+        <video controls>
+            <source src="mp4/kundalini.mp4" type="video/mp4">
+            متصفحك لا يدعم علامة الفيديو.
+        </video>
+        <!-- تنزيل الفيديو -->
+        <div class="cta">
+            <a href="mp4/kundalini.mp4" download="dynamic_meditation_video.mp4" class="download-btn">تحميل الفيديو</a>
+        </div>
+        
+        <!-- قسم الصوت مع خيار التحميل -->
+        <p><strong>لممارسة هذا التأمل:</strong> قم بتنزيل الصوت واستمع إليه أثناء اتباع الخطوات أدناه.</p>
+
+        <!-- قسم الصوت -->
+        <audio controls>
+            <source src="mp3/Kundalini.mp3" type="audio/mpeg">
+            متصفحك لا يدعم عنصر الصوت.
+        </audio>
+
+        <!-- تنزيل الصوت -->
+        <div class="cta">
+            <a href="mp3/Kundalini.mp3" download="Kundalini.mp3">تحميل الصوت</a>
+        </div>
+
+        <!-- خطوات التأمل -->
+        <div class="step">
+            <h2 class="step-title">1. الاسترخاء واهتزاز الجسم بالكامل (15 دقيقة)</h2>
+            <p class="step-description">قف بشكل مريح ودع جسمك يهتز بالكامل. اشعر بالطاقة وهي تتحرك من قدميك واترك نفسك تمامًا. يمكنك إبقاء عينيك مفتوحتين أو مغلقتين، ودع الاهتزاز يحدث بشكل طبيعي دون إجبار.</p>
+            <img src="images/shaking.webp" alt="صورة اهتزاز الجسم بالكامل">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. الرقص بحرية (15 دقيقة)</h2>
+            <p class="step-description">ارقص كما تشعر. دع جسمك كله يتحرك كما يريد، بدون أي قيود. سواء كانت عينيك مفتوحتين أو مغلقتين، اسمح للحركات أن تأتي بشكل طبيعي مع إطلاق أي توتر.</p>
+            <img src="images/dance.webp" alt="صورة الرقص">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. الشهود (15 دقيقة)</h2>
+            <p class="step-description">اجلس أو قف بثبات وأغلق عينيك. راقب واشهد ما يحدث داخلك وخارجك. اسمح للطاقة والمشاعر بالتدفق، وكن فقط شاهدًا بدون حكم أو تدخل.</p>
+            <img src="images/witness.webp" alt="صورة الشهود">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">4. السكون والاسترخاء (15 دقيقة)</h2>
+            <p class="step-description">في هذه المرحلة الأخيرة، استلقِ وأغلق عينيك وابقَ ساكنًا تمامًا. دع أفكارك تذهب واسترح بعمق، وامتص الطاقة والهدوء الذي تم توليده أثناء التأمل.</p>
+            <img src="images/stillness.webp" alt="صورة السكون">
+        </div>
+
+        <!-- شرح إضافي لتأمل الكونداليني -->
+        <div class="step">
+            <h2 class="step-title">إرشادات للخطوة 1: دع الاهتزاز يحدث بشكل طبيعي</h2>
+            <p class="step-description">عند ممارسة تأمل الكونداليني، لا تجبر نفسك على الاهتزاز. قف بهدوء ودع الاهتزاز يحدث بشكل طبيعي. إذا بدأ جسمك في الاهتزاز، دع الاهتزاز يتدفق دون محاولة التحكم فيه. استمتع بفرحة الاهتزاز دون محاولة توجيهه. كلما استرخت واستمتعت بالعملية، كلما كانت التأمل أكثر طبيعية وفعالية.</p>
+        </div>
+
+        <!-- دعوة للعمل -->
+        <div class="cta">
+            <a href="pdf/Kundalini.pdf">تعرف على المزيد حول تأمل الكونداليني</a>
+        </div>
+    </section>
+
+</body>
+
+</html>

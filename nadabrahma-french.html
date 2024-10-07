@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadabrahma</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>Méditation Nadabrahma</h1>
+
+        <p>La méditation Nadabrahma est une ancienne pratique tibétaine où les sons de bourdonnement et les mouvements des mains créent une harmonie entre le corps et l'esprit. Elle est conçue pour vous connecter à votre moi intérieur grâce au son et aux vibrations, résultant en un profond sentiment d'équilibre et de tranquillité.</p>
+
+        <!-- Section Vidéo -->
+        <video controls>
+            <source src="mp4/nadarahma.mp4" type="video/mp4">
+            Votre navigateur ne prend pas en charge la balise vidéo.
+        </video>
+        <!-- Télécharger Vidéo -->
+        <div class="cta">
+            <a href="mp4/nadarahma.mp4" download="dynamic_meditation_video.mp4" class="download-btn">Télécharger Vidéo</a>
+        </div>
+
+        <!-- Section Audio avec Option de Téléchargement -->
+        <p><strong>Pour pratiquer cette méditation :</strong> Téléchargez l'audio et écoutez-le tout en suivant les étapes ci-dessous.</p>
+
+        <!-- Section Audio -->
+        <audio controls>
+            <source src="mp3/Nadabrama.mp3" type="audio/mpeg">
+            Votre navigateur ne prend pas en charge l'élément audio.
+        </audio>
+
+        <!-- Télécharger Audio -->
+        <div class="cta">
+            <a href="mp3/Nadabrama.mp3" download="Nadabrama.mp3">Télécharger Audio</a>
+        </div>
+
+        <!-- Étapes de la Méditation -->
+        <div class="step">
+            <h2 class="step-title">1. Préparation</h2>
+            <p class="step-description">Trouvez un endroit calme et confortable pour méditer. Asseyez-vous dans une posture détendue avec la colonne vertébrale droite, les mains reposant sur vos genoux. Fermez les yeux et prenez quelques respirations profondes pour vous détendre.</p>
+            <img src="images/1.webp" alt="Image de préparation">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. Étape 1: Bourdonnement (30 minutes)</h2>
+            <p class="step-description">Commencez à émettre un bourdonnement, comme "mmm" ou "aaa", suffisamment fort pour créer une vibration dans votre corps. Laissez le son résonner en vous. Il arrivera un moment où le bourdonnement continuera de lui-même, et vous écouterez simplement les vibrations.</p>
+            <img src="images/humming.webp" alt="Image du bourdonnement">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. Étape 2: Mouvements des mains (15 minutes)</h2>
+
+            <!-- Sous-étape 1 -->
+            <h3 class="step-title">3.1 Première moitié (7.5 minutes): Donner de l'énergie</h3>
+            <p class="step-description">Pendant les 7.5 premières minutes, bougez vos mains vers l'extérieur, paumes vers le haut, en mouvements circulaires lents. Commencez le mouvement au niveau du nombril, puis étendez vos mains vers l'extérieur comme si vous donniez de l'énergie à l'univers. Gardez vos mouvements doux et lents.</p>
+            <img src="images/nadabrama-meditation-4.jpg" alt="Image de donner de l'énergie">
+
+            <!-- Sous-étape 2 -->
+            <h3 class="step-title">3.2 Deuxième moitié (7.5 minutes): Recevoir de l'énergie</h3>
+            <p class="step-description">Pendant les 7.5 minutes suivantes, inversez le mouvement en tournant les paumes vers le bas et en ramenant lentement vos mains vers le corps. Visualisez-vous en train de recevoir de l'énergie de l'univers, en vous concentrant sur la sensation de cette énergie qui pénètre dans votre corps.</p>
+            <img src="images/back.png" alt="Image de recevoir de l'énergie">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">4. Étape 3: Relaxation (15 minutes)</h2>
+            <p class="step-description">Dans la dernière étape, arrêtez tous les mouvements et restez assis immobile. Observez l'énergie et les vibrations en vous, et profitez d'un état profond de relaxation et d'harmonie intérieure.</p>
+            <img src="images/witness.webp" alt="Image de relaxation">
+        </div>
+
+        <!-- Appel à l'action -->
+        <div class="cta">
+            <a href="pdf/Nadabrahma.pdf">En savoir plus sur la Méditation Nadabrahma</a>
+        </div>
+    </section>
+
+</body>
+
+
+</html>

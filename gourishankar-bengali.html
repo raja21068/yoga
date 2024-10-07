@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourishankar Meditation</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>গৌরিশংকর ধ্যান</h1>
+
+        <p>গৌরিশংকর ধ্যান একটি শক্তিশালী কেন্দ্রীকরণ কৌশল যা তৃতীয় চোখের উপর কাজ করে। এই ধ্যানটি চারটি পর্যায়ে বিভক্ত, প্রতিটি ১৫ মিনিটের। প্রথম দুটি পর্যায় তৃতীয় পর্যায়ের স্বতঃস্ফূর্ত অভিজ্ঞতার জন্য ধ্যানকারীকে প্রস্তুত করে। বলা হয় যে যদি প্রথম পর্যায়ে সঠিকভাবে শ্বাস নেওয়া হয়, তবে ধ্যানকারী এমন অনুভব করবেন যেন তারা গৌরিশংকরে (মাউন্ট এভারেস্ট) রয়েছেন।</p>
+
+        <!-- ভিডিও অংশ -->
+        <video controls>
+            <source src="mp4/gourishankar.mp4" type="video/mp4">
+            আপনার ব্রাউজার ভিডিও ট্যাগ সমর্থন করে না।
+        </video>
+        <!-- ভিডিও ডাউনলোড -->
+        <div class="cta">
+            <a href="mp4/gourishankar.mp4" download="gourishankar_meditation_video.mp4" class="download-btn">ভিডিও ডাউনলোড করুন</a>
+        </div>
+
+        <!-- অডিও অংশ এবং ডাউনলোড অপশন -->
+        <p><strong>এই ধ্যানটি অনুশীলন করতে:</strong> অডিওটি ডাউনলোড করুন এবং নিচের ধাপগুলি অনুসরণ করে শুনুন।</p>
+
+        <!-- অডিও অংশ -->
+        <audio controls>
+            <source src="mp3/Gourishankar.mp3" type="audio/mpeg">
+            আপনার ব্রাউজার অডিও এলিমেন্ট সমর্থন করে না।
+        </audio>
+
+        <!-- অডিও ডাউনলোড -->
+        <div class="cta">
+            <a href="mp3/Gourishankar.mp3" download="gourishankar.mp3">অডিও ডাউনলোড করুন</a>
+        </div>
+
+        <!-- ধ্যানের ধাপ -->
+        <div class="step">
+            <h2 class="step-title">1. প্রথম ধাপ: ১৫ মিনিট</h2>
+            <p class="step-description">
+                আপনার চোখ বন্ধ করে বসুন। নাক দিয়ে গভীর শ্বাস নিন, ফুসফুস ভর্তি করুন এবং যতক্ষণ সম্ভব শ্বাস ধরে রাখুন। তারপর মুখ দিয়ে ধীরে ধীরে শ্বাস ছাড়ুন এবং যতক্ষণ সম্ভব ফুসফুস খালি রাখুন। এই চক্রটি পুনরাবৃত্তি করুন।
+            </p>
+            <img src="images/shankar1.webp" alt="প্রথম ধাপ ছবি">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. দ্বিতীয় ধাপ: ১৫ মিনিট</h2>
+            <p class="step-description">
+                স্বাভাবিক শ্বাস-প্রশ্বাসে ফিরে আসুন। আপনার দৃষ্টিকে কোমল এবং নমনীয় রাখুন এবং একটি শিখা বা নীল ঝলমলে আলো দেখুন। এই প্রক্রিয়ার সময় স্থির থাকুন।
+            </p>
+            <p class="step-description">
+                <strong>বিঃদ্রঃ ১:</strong> যাদের নিউরোলজিক্যাল সমস্যা যেমন এপিলেপসি আছে, তাদের এই ধ্যানের জন্য কখনো ঝলমলে বা স্ট্রোব আলো ব্যবহার করা উচিত নয়। তারা দ্বিতীয় ধাপটি চোখে কাপড় বেঁধে করতে পারে।
+            </p>
+            <p class="step-description">
+                <strong>বিঃদ্রঃ ২:</strong> এই ধ্যানের দ্বিতীয় ধাপের সংগীতে এমন একটি ছন্দময় বিট রয়েছে যা স্বাভাবিক হৃদস্পন্দনের চেয়ে সাত গুণ বেশি। সম্ভব হলে, ঝলমলে আলোটি প্রতি মিনিটে ৪৯০ ফ্রিকোয়েন্সির সাথে সামঞ্জস্যপূর্ণ হওয়া উচিত। যদি স্ট্রোব লাইট না থাকে, আপনি একটি মোমবাতি ব্যবহার করতে পারেন।
+            </p>
+            <img src="images/shankar2.webp" alt="দ্বিতীয় ধাপ ছবি">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. তৃতীয় ধাপ: ১৫ মিনিট</h2>
+            <p class="step-description">
+                চোখ বন্ধ করে দাঁড়ান এবং আপনার শরীরকে শিথিল এবং গ্রহণযোগ্য হতে দিন। আপনার ভেতরের সূক্ষ্ম শক্তি আপনার শরীরকে আপনার নিয়মিত নিয়ন্ত্রণের বাইরে নিয়ে যাবে। ইচ্ছাকৃতভাবে নড়াচড়া করবেন না; গতি স্বয়ংক্রিয়ভাবে ঘটতে দিন।
+            </p>
+            <img src="images/shankar3.webp" alt="তৃতীয় ধাপ ছবি">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">4. চতুর্থ ধাপ: ১৫ মিনিট</h2>
+            <p class="step-description">
+                আপনার চোখ বন্ধ রেখে শুয়ে পড়ুন এবং স্থির থাকুন। নীরবতার একটি অবস্থায় প্রবেশ করুন এবং স্বাভাবিকভাবে প্রত্যক্ষ করতে দিন।
+            </p>
+            <img src="images/sleep.webp" alt="চতুর্থ ধাপ ছবি">
+        </div>
+
+        <!-- কল টু অ্যাকশন -->
+        <div class="cta">
+            <a href="pdf/Gourishankar.pdf">গৌরিশংকর ধ্যান সম্পর্কে আরও জানুন</a>
+        </div>
+    </section>
+
+</body>
+
+
+
+</html>

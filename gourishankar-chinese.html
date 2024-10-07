@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourishankar Meditation</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>古里山卡尔冥想</h1>
+
+        <p>古里山卡尔冥想是一种强大的集中技巧，主要作用于第三眼。该冥想由四个阶段组成，每个阶段持续15分钟。前两个阶段为第三阶段的自发体验做准备。据说，如果在第一阶段呼吸正确，冥想者会感觉自己像在古里山卡尔（珠穆朗玛峰）上。</p>
+
+        <!-- 视频部分 -->
+        <video controls>
+            <source src="mp4/gourishankar.mp4" type="video/mp4">
+            您的浏览器不支持视频标签。
+        </video>
+        <!-- 下载视频 -->
+        <div class="cta">
+            <a href="mp4/gourishankar.mp4" download="gourishankar_meditation_video.mp4" class="download-btn">下载视频</a>
+        </div>
+
+        <!-- 音频部分及下载选项 -->
+        <p><strong>练习此冥想：</strong> 下载音频并在以下步骤中跟随音频进行练习。</p>
+
+        <!-- 音频部分 -->
+        <audio controls>
+            <source src="mp3/Gourishankar.mp3" type="audio/mpeg">
+            您的浏览器不支持音频元素。
+        </audio>
+
+        <!-- 下载音频 -->
+        <div class="cta">
+            <a href="mp3/Gourishankar.mp3" download="gourishankar.mp3">下载音频</a>
+        </div>
+
+        <!-- 冥想步骤 -->
+        <div class="step">
+            <h2 class="step-title">1. 第一步：15分钟</h2>
+            <p class="step-description">
+                闭上眼睛坐下，通过鼻子深深吸气，充满肺部，尽可能长时间屏住呼吸。然后通过嘴轻轻呼气，尽可能长时间保持肺部空空的状态。重复这个循环。
+            </p>
+            <img src="images/shankar1.webp" alt="第一阶段图片">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. 第二步：15分钟</h2>
+            <p class="step-description">
+                恢复正常呼吸。保持目光柔和，注视一根火焰或闪烁的（频闪）蓝光。在此过程中保持静止。
+            </p>
+            <p class="step-description">
+                <strong>注意1：</strong> 具有神经系统疾病如癫痫的患者切勿使用频闪灯进行此冥想。他们可以通过戴上眼罩完成第二阶段。
+            </p>
+            <p class="step-description">
+                <strong>注意2：</strong> 冥想第二阶段的音乐有一种节奏感，其节拍是正常心跳的七倍。如果可能，闪烁的灯光应为每分钟490次的同步频闪灯。如果没有频闪灯，可以使用蜡烛。
+            </p>
+            <img src="images/shankar2.webp" alt="第二阶段图片">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. 第三步：15分钟</h2>
+            <p class="step-description">
+                闭上眼睛，站起来，保持身体松弛并具有接受性。体内的微妙能量将让你的身体在正常控制之外自行移动。不要有意识地移动，让动作自然而然地发生。
+            </p>
+            <img src="images/shankar3.webp" alt="第三阶段图片">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">4. 第四步：15分钟</h2>
+            <p class="step-description">
+                闭上眼睛，躺下并保持静止。进入宁静状态，让观察自然发生。
+            </p>
+            <img src="images/sleep.webp" alt="第四阶段图片">
+        </div>
+
+        <!-- 行动号召 -->
+        <div class="cta">
+            <a href="pdf/Gourishankar.pdf">了解更多关于古里山卡尔冥想的信息</a>
+        </div>
+    </section>
+
+</body>
+
+
+</html>

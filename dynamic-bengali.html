@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>ডাইনামিক মেডিটেশন</h1>
+
+        <p>ডাইনামিক মেডিটেশন হল ওশো দ্বারা বিকশিত একটি অনন্য অনুশীলন যা শারীরিক আন্দোলন, শ্বাসপ্রশ্বাস এবং আবেগের মুক্তির সমন্বয় করে। এই কৌশলটি অংশগ্রহণকারীদের মানসিক বাধা ভাঙতে, চাপ মুক্ত করতে এবং তাদের অভ্যন্তরীণ শক্তির সাথে সংযোগ স্থাপন করতে সহায়তা করার জন্য ডিজাইন করা হয়েছে। এটি সক্রিয়, ক্যাথার্টিক প্রক্রিয়ার মাধ্যমে শুরু হয় যা শান্তি এবং সচেতনতায় শেষ হয়।</p>
+
+        <!-- ভিডিও সেকশন -->
+        <video controls>
+            <source src="mp4/dynamic.mp4" type="video/mp4">
+            আপনার ব্রাউজার ভিডিও ট্যাগ সমর্থন করে না।
+        </video>
+        <!-- ভিডিও ডাউনলোড করুন -->
+        <div class="cta">
+            <a href="mp4/dynamic.mp4" download="dynamic_meditation_video.mp4" class="download-btn">ভিডিও ডাউনলোড করুন</a>
+        </div>
+        
+        <!-- অডিও সেকশন ডাউনলোড অপশন সহ -->
+        <p><strong>এই মেডিটেশন অনুশীলন করতে:</strong> অডিওটি ডাউনলোড করুন এবং নীচের ধাপগুলি অনুসরণ করার সময় শুনুন।</p>
+
+        <!-- অডিও সেকশন -->
+        <audio controls>
+            <source src="mp3/Dynamic.mp3" type="audio/mpeg">
+            আপনার ব্রাউজার অডিও এলিমেন্ট সমর্থন করে না।
+        </audio>
+
+        <!-- অডিও ডাউনলোড করুন -->
+        <div class="cta">
+            <a href="mp3/Dynamic.mp3" download="Dynamic.mp3">অডিও ডাউনলোড করুন</a>
+        </div>
+
+        <!-- মেডিটেশন ধাপ -->
+        <div class="step">
+            <h2 class="step-title">1. প্রস্তুতি</h2>
+            <p class="step-description">একটি শান্ত এবং ব্যক্তিগত জায়গা খুঁজুন। এমন আরামদায়ক পোশাক পরুন যা চলাফেরার স্বাধীনতা দেয়। নিশ্চিত করুন যে সেশন চলাকালীন কোনো বিঘ্ন না ঘটে।</p>
+            <img src="images/1.webp" alt="প্রস্তুতি ছবি">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. ধাপ 1: বিশৃঙ্খল শ্বাস (10 মিনিট)</h2>
+            <p class="step-description">আপনার বাহু তুলে দাঁড়ান, চোখ বন্ধ করুন এবং নাক দিয়ে দ্রুত এবং গভীর শ্বাস নিন। বিশৃঙ্খল শ্বাসের উপর ফোকাস করুন, আপনার শরীরকে শক্তি দিয়ে ভরে তুলুন।</p>
+            <img src="images/2.webp" alt="বিশৃঙ্খল শ্বাস ছবি">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. ধাপ 2: ক্যাথারসিস (10 মিনিট)</h2>
+            <p class="step-description">আপনার সমস্ত আবেগ সম্পূর্ণরূপে প্রকাশ করতে দিন। চিৎকার করুন, হাসুন, কাঁদুন বা নড়াচড়া করুন। এই ধাপটি সম্পূর্ণ মুক্তি এবং আবেগগত উত্তেজনা থেকে মুক্ত হওয়া সম্পর্কে।</p>
+            <img src="images/3.webp" alt="ক্যাথারসিস ছবি">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">4. ধাপ 3: লাফানো (10 মিনিট)</h2>
+            <p class="step-description">চোখ বন্ধ করে, জায়গায় লাফান এবং "হু! হু! হু!" মন্ত্র জপ করুন। আপনার পায়ের তলায় পড়ার সময় শব্দটিকে আপনার শরীরে প্রতিধ্বনিত হতে দিন।</p>
+            <img src="images/4.webp" alt="লাফানো ছবি">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">5. ধাপ 4: স্থির থাকা (15 মিনিট)</h2>
+            <p class="step-description">আপনার লাফানোর মাঝামাঝি অবস্থানে হঠাৎ স্থির হয়ে যান। আপনার শরীর সম্পূর্ণ স্থির রাখুন। সম্পূর্ণ স্থির অবস্থায় থাকা অবস্থায় আপনার মধ্যে প্রবাহিত শক্তির পর্যবেক্ষণ করুন।</p>
+            <img src="images/5.webp" alt="স্থির থাকার ছবি">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">6. ধাপ 5: উদযাপন (15 মিনিট)</h2>
+            <p class="step-description">স্থির থাকার পর, স্বাধীনতা এবং আনন্দের সাথে নাচ শুরু করুন। আপনার গতিবিধি আপনার শক্তির প্রকাশ হতে দিন, কোনো সীমাবদ্ধতা বা বাধা ছাড়াই জীবন উদযাপন করুন।</p>
+            <img src="images/6.webp" alt="উদযাপন ছবি">
+        </div>
+
+        <!-- কল টু অ্যাকশন -->
+        <div class="cta">
+            <a href="pdf/dynamic.pdf">ডাইনামিক মেডিটেশন সম্পর্কে আরও জানুন</a>
+        </div>
+    </section>
+
+</body>
+
+
+</html>

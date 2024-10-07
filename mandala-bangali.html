@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandala Meditation</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>মন্ডল ধ্যান</h1>
+
+        <p>মন্ডল ধ্যান একটি শক্তিশালী, ক্যাথার্টিক পদ্ধতি যা প্রাকৃতিক কেন্দ্রীকরণের জন্য একটি শক্তির বৃত্ত তৈরি করে। এই ধ্যান চারটি পর্যায়ে বিভক্ত, প্রতিটি ১৫ মিনিট স্থায়ী। প্রক্রিয়াটি ধ্যানকারীকে মনের বৃত্তাকার প্রকৃতি সম্পর্কে সচেতন হতে এবং আবেগ এবং চিন্তার অবিরাম চক্রগুলি ভাঙতে সাহায্য করে।</p>
+
+        <!-- ভিডিও অংশ -->
+        <video controls>
+            <source src="mp4/mandala.mp4" type="video/mp4">
+            আপনার ব্রাউজার ভিডিও ট্যাগ সমর্থন করে না।
+        </video>
+        <!-- ভিডিও ডাউনলোড -->
+        <div class="cta">
+            <a href="mp4/mandala.mp4" download="mandala_meditation_video.mp4" class="download-btn">ভিডিও ডাউনলোড করুন</a>
+        </div>
+
+        <!-- অডিও অংশ এবং ডাউনলোড অপশন -->
+        <p><strong>এই ধ্যানের অনুশীলন করতে:</strong> অডিওটি ডাউনলোড করুন এবং নিচের ধাপগুলি অনুসরণ করার সময় শুনুন।</p>
+
+        <!-- অডিও অংশ -->
+        <audio controls>
+            <source src="mp3/Mandala.mp3" type="audio/mpeg">
+            আপনার ব্রাউজার অডিও এলিমেন্ট সমর্থন করে না।
+        </audio>
+
+        <!-- অডিও ডাউনলোড -->
+        <div class="cta">
+            <a href="mp3/Mandala.mp3" download="Mandala.mp3">অডিও ডাউনলোড করুন</a>
+        </div>
+
+        <!-- ধ্যানের ধাপ -->
+        <div class="step">
+            <h2 class="step-title">1. প্রথম ধাপ: ১৫ মিনিট</h2>
+            <p class="step-description">
+                চোখ খোলা রেখে, স্থানে দৌড়ান। ধীরে শুরু করুন এবং ধীরে ধীরে গতি বাড়ান। আপনার হাঁটু যতটা সম্ভব উঁচুতে তুলুন। গভীর এবং সমানভাবে শ্বাস নিন যাতে আপনার ভিতরের শক্তি স্থানান্তরিত হয়। মন এবং শরীরকে ভুলে গিয়ে দৌড়ান।
+            </p>
+            <img src="images/mandala1.webp" alt="প্রথম ধাপ ছবি">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. দ্বিতীয় ধাপ: ১৫ মিনিট</h2>
+            <p class="step-description">
+                চোখ বন্ধ করে বসুন এবং মুখ খোলা এবং শিথিল অবস্থায় রাখুন। কোমর থেকে শরীর ধীরে ধীরে ঘোরান, যেমন বাতাসে দোলানো একটি নল। নিজেকে একপাশ থেকে অন্য পাশে, সামনের দিকে এবং পিছনের দিকে যেতে অনুভব করুন। এটি আপনার জাগ্রত শক্তিকে নাভি কেন্দ্রে নিয়ে আসবে।
+            </p>
+            <img src="images/mandala2.webp" alt="দ্বিতীয় ধাপ ছবি">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. তৃতীয় ধাপ: ১৫ মিনিট</h2>
+            <p class="step-description">
+                আপনার পিঠে শুয়ে পড়ুন এবং চোখ খোলা রাখুন। মাথা স্থির রাখুন এবং ঘড়ির কাঁটার দিকে চোখ ঘোরান। তাদের পুরোপুরি গর্তে ঘুরতে দিন যেন একটি বিশাল ঘড়ির সেকেন্ডের কাঁটার দিকে তাকিয়ে আছেন। যত দ্রুত সম্ভব এটি করুন, মনের চাপ কমানোর জন্য মুখ খোলা এবং চোয়াল শিথিল রাখুন। ধীরে ধীরে এবং সমানভাবে শ্বাস নিন। এটি আপনার কেন্দ্রীভূত শক্তিকে তৃতীয় চোখে নিয়ে আসবে।
+            </p>
+            <img src="images/mandala3.webp" alt="তৃতীয় ধাপ ছবি">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">4. চতুর্থ ধাপ: ১৫ মিনিট</h2>
+            <p class="step-description">
+                আপনার চোখ বন্ধ করুন এবং স্থির থাকুন। একটি নীরব অবস্থায় প্রবেশ করুন এবং অভিজ্ঞতাটিকে একীভূত হতে দিন।
+            </p>
+            <img src="images/sleep.webp" alt="চতুর্থ ধাপ ছবি">
+        </div>
+
+        <!-- কল টু অ্যাকশন -->
+        <div class="cta">
+            <a href="pdf/mandala.pdf">মন্ডল ধ্যান সম্পর্কে আরও জানুন</a>
+        </div>
+    </section>
+
+</body>
+
+
+
+
+</html>

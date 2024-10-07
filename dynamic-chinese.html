@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>动态冥想</h1>
+
+        <p>动态冥想是由奥修开发的一种独特练习，结合了身体运动、呼吸法和情感释放。这项技术旨在帮助参与者打破心理障碍，释放压力，并与内在能量连接。它包括主动的、宣泄的过程，最终进入静止和觉知状态。</p>
+
+        <!-- 视频部分 -->
+        <video controls>
+            <source src="mp4/dynamic.mp4" type="video/mp4">
+            您的浏览器不支持视频标签。
+        </video>
+        <!-- 下载视频 -->
+        <div class="cta">
+            <a href="mp4/dynamic.mp4" download="dynamic_meditation_video.mp4" class="download-btn">下载视频</a>
+        </div>
+        
+        <!-- 音频部分及下载选项 -->
+        <p><strong>练习此冥想：</strong> 下载音频并在以下步骤中跟随音频进行练习。</p>
+
+        <!-- 音频部分 -->
+        <audio controls>
+            <source src="mp3/Dynamic.mp3" type="audio/mpeg">
+            您的浏览器不支持音频元素。
+        </audio>
+
+        <!-- 下载音频 -->
+        <div class="cta">
+            <a href="mp3/Dynamic.mp3" download="Dynamic.mp3">下载音频</a>
+        </div>
+
+        <!-- 冥想步骤 -->
+        <div class="step">
+            <h2 class="step-title">1. 准备工作</h2>
+            <p class="step-description">找到一个安静私密的空间。穿上舒适的衣服，确保没有任何干扰，适合自由活动。</p>
+            <img src="images/1.webp" alt="准备工作图片">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. 第一步：混乱呼吸（10分钟）</h2>
+            <p class="step-description">站立，双臂举起，闭上眼睛，快速深呼吸，专注于混乱的呼吸，让身体充满能量。</p>
+            <img src="images/2.webp" alt="混乱呼吸图片">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. 第二步：宣泄（10分钟）</h2>
+            <p class="step-description">完全表达你所有的情感。喊叫、尖叫、笑、哭或移动。这个阶段是完全释放和摆脱情绪紧张的时刻。</p>
+            <img src="images/3.webp" alt="宣泄图片">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">4. 第三步：跳跃（10分钟）</h2>
+            <p class="step-description">闭上眼睛，原地上下跳动，同时念诵“呼！呼！呼！”的咒语，感受声音在身体中共振，脚掌着地时与能量连接。</p>
+            <img src="images/4.webp" alt="跳跃图片">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">5. 第四步：静止（15分钟）</h2>
+            <p class="step-description">在跳跃的中途突然静止，保持身体完全不动。观察体内的能量流动，同时保持完全的静止状态。</p>
+            <img src="images/5.webp" alt="静止图片">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">6. 第五步：庆祝（15分钟）</h2>
+            <p class="step-description">在静止之后，开始自由、欢快地舞蹈。让你的动作成为能量的表达，毫无限制或拘束地庆祝生命。</p>
+            <img src="images/6.webp" alt="庆祝图片">
+        </div>
+
+        <!-- 行动号召 -->
+        <div class="cta">
+            <a href="pdf/dynamic.pdf">了解更多关于动态冥想的信息</a>
+        </div>
+    </section>
+
+ </body>
+
+
+</html>

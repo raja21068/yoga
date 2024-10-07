@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandala Meditation</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>Meditación Mandala</h1>
+
+        <p>La meditación Mandala es una técnica catártica poderosa que crea un círculo de energía para el centrado natural. Esta meditación consta de cuatro etapas, cada una de 15 minutos. El proceso ayuda al meditador a tomar conciencia de la naturaleza circular de la mente y romper los ciclos continuos de emociones y pensamientos.</p>
+
+        <!-- Sección de video -->
+        <video controls>
+            <source src="mp4/mandala.mp4" type="video/mp4">
+            Su navegador no soporta la etiqueta de video.
+        </video>
+        <!-- Descargar video -->
+        <div class="cta">
+            <a href="mp4/mandala.mp4" download="mandala_meditation_video.mp4" class="download-btn">Descargar Video</a>
+        </div>
+
+        <!-- Sección de audio con opción de descarga -->
+        <p><strong>Para practicar esta meditación:</strong> Descargue el audio y escúchelo mientras sigue los pasos a continuación.</p>
+
+        <!-- Sección de audio -->
+        <audio controls>
+            <source src="mp3/Mandala.mp3" type="audio/mpeg">
+            Su navegador no soporta el elemento de audio.
+        </audio>
+
+        <!-- Descargar audio -->
+        <div class="cta">
+            <a href="mp3/Mandala.mp3" download="Mandala.mp3">Descargar Audio</a>
+        </div>
+
+        <!-- Pasos de la meditación -->
+        <div class="step">
+            <h2 class="step-title">1. Primera etapa: 15 minutos</h2>
+            <p class="step-description">
+                Con los ojos abiertos, corre en el lugar. Comienza despacio y aumenta la velocidad gradualmente. Levanta las rodillas lo más alto posible. Respira profundamente y de manera uniforme para mover la energía dentro de ti. Olvida la mente y el cuerpo, y sigue corriendo.
+            </p>
+            <img src="images/mandala1.webp" alt="Primera Etapa Imagen">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. Segunda etapa: 15 minutos</h2>
+            <p class="step-description">
+                Siéntate con los ojos cerrados y la boca abierta y relajada. Gira suavemente tu cuerpo desde la cintura, como un junco movido por el viento. Siente cómo te mueves de lado a lado, adelante y atrás. Esto llevará tus energías despertadas al centro del ombligo.
+            </p>
+            <img src="images/mandala2.webp" alt="Segunda Etapa Imagen">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. Tercera etapa: 15 minutos</h2>
+            <p class="step-description">
+                Acuéstate de espaldas con los ojos abiertos. Mantén la cabeza quieta y rota los ojos en el sentido de las agujas del reloj. Gíralos completamente en sus órbitas como si estuvieras siguiendo el segundero de un enorme reloj. Hazlo lo más rápido posible mientras mantienes la boca abierta y la mandíbula relajada. Respira suavemente y de manera uniforme. Esto llevará tus energías centradas al tercer ojo.
+            </p>
+            <img src="images/mandala3.webp" alt="Tercera Etapa Imagen">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">4. Cuarta etapa: 15 minutos</h2>
+            <p class="step-description">
+                Cierra los ojos y permanece quieto. Entra en un estado de silencio y permite que la experiencia se integre.
+            </p>
+            <img src="images/sleep.webp" alt="Cuarta Etapa Imagen">
+        </div>
+
+        <!-- Llamado a la acción -->
+        <div class="cta">
+            <a href="pdf/mandala.pdf">Aprende Más Sobre la Meditación Mandala</a>
+        </div>
+    </section>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kundalini</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>کُنڈلینی مراقبہ</h1>
+
+        <p>کُنڈلینی مراقبہ ایک روحانی مشق ہے جو مختلف روایات، بشمول ہندومت، تنتر اور سکھ مت میں جڑی ہوئی ہے۔ یہ سانس لینے کی مشق، حرکت اور مراقبہ کو یکجا کرتا ہے تاکہ جسم کی توانائی کو بیدار اور چالو کیا جا سکے۔ نیچے کُنڈلینی مراقبہ کے مکمل سیشن کے مراحل دیے گئے ہیں۔</p>
+
+        <!-- ویڈیو سیکشن -->
+        <video controls>
+            <source src="mp4/kundalini.mp4" type="video/mp4">
+            آپ کا براؤزر ویڈیو ٹیگ کو سپورٹ نہیں کرتا۔
+        </video>
+        <!-- ویڈیو ڈاؤن لوڈ کریں -->
+        <div class="cta">
+            <a href="mp4/kundalini.mp4" download="dynamic_meditation_video.mp4" class="download-btn">ویڈیو ڈاؤن لوڈ کریں</a>
+        </div>
+        
+        <!-- آڈیو سیکشن اور ڈاؤن لوڈ کا آپشن -->
+        <p><strong>اس مراقبے کو کرنے کے لئے:</strong> آڈیو ڈاؤن لوڈ کریں اور نیچے دیے گئے مراحل کے ساتھ سنتے رہیں۔</p>
+
+        <!-- آڈیو سیکشن -->
+        <audio controls>
+            <source src="mp3/Kundalini.mp3" type="audio/mpeg">
+            آپ کا براؤزر آڈیو عنصر کو سپورٹ نہیں کرتا۔
+        </audio>
+
+        <!-- آڈیو ڈاؤن لوڈ کریں -->
+        <div class="cta">
+            <a href="mp3/Kundalini.mp3" download="Kundalini.mp3">آڈیو ڈاؤن لوڈ کریں</a>
+        </div>
+
+        <!-- مراقبے کے مراحل -->
+        <div class="step">
+            <h2 class="step-title">1. ڈھیلے رہیں اور پورے جسم کو ہلائیں (15 منٹ)</h2>
+            <p class="step-description">ڈھیلے کھڑے ہو جائیں اور اپنے پورے جسم کو ہلنے دیں۔ توانائی کو اپنے پیروں سے اوپر کی طرف محسوس کریں اور مکمل طور پر آزاد ہو جائیں۔ آپ آنکھیں کھلی یا بند رکھ سکتے ہیں، اور ہلنے کو قدرتی طور پر ہونے دیں، اسے زبردستی نہ کریں۔</p>
+            <img src="images/shaking.webp" alt="پورے جسم کو ہلانا تصویر">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. آزادانہ طور پر رقص کریں (15 منٹ)</h2>
+            <p class="step-description">جس طرح سے آپ محسوس کریں ویسے رقص کریں۔ اپنے جسم کو کسی بھی طرح کی روک ٹوک کے بغیر آزادانہ حرکت کرنے دیں۔ چاہے آپ کی آنکھیں کھلی ہوں یا بند، حرکت کو قدرتی طور پر ہونے دیں اور کسی بھی قسم کے تناؤ کو چھوڑ دیں۔</p>
+            <img src="images/dance.webp" alt="رقص تصویر">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. مشاہدہ کریں (15 منٹ)</h2>
+            <p class="step-description">آنکھیں بند کر کے بیٹھیں یا کھڑے ہو جائیں اور جو کچھ بھی اندر اور باہر ہو رہا ہے اسے مشاہدہ کریں۔ توانائی اور احساسات کو بہنے دیں، اور بغیر کسی فیصلے یا مداخلت کے محض ایک مشاہد بن جائیں۔</p>
+            <img src="images/witness.webp" alt="مشاہدہ تصویر">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">4. سکون اور آرام (15 منٹ)</h2>
+            <p class="step-description">اس آخری مرحلے میں، آنکھیں بند کر کے لیٹ جائیں اور مکمل طور پر پرسکون رہیں۔ کسی بھی خیال کو چھوڑ دیں اور مراقبے کے دوران پیدا ہونے والی توانائی اور سکون کو جذب کرتے ہوئے گہرائی سے آرام کریں۔</p>
+            <img src="images/stillness.webp" alt="سکون تصویر">
+        </div>
+
+        <!-- کُنڈلینی مراقبے کے بارے میں مزید وضاحت -->
+        <div class="step">
+            <h2 class="step-title">پہلے مرحلے کے لئے رہنمائی: ہلنے کو قدرتی طور پر ہونے دیں</h2>
+            <p class="step-description">کُنڈلینی مراقبہ کرتے وقت، ہلنے کو زبردستی نہ کریں۔ خاموشی سے کھڑے ہوں اور اسے قدرتی طور پر ہونے دیں۔ اگر آپ کا جسم ہلنے لگے تو اسے بہنے دیں اور کنٹرول نہ کریں۔ ہلنے کی خوشی محسوس کریں اور اسے کنٹرول کرنے کی کوشش نہ کریں۔ جتنا زیادہ آپ آرام کریں گے اور اس عمل کا لطف اٹھائیں گے، مراقبہ اتنا ہی زیادہ قدرتی اور مؤثر ہوگا۔</p>
+        </div>
+
+        <!-- عمل کی دعوت -->
+        <div class="cta">
+            <a href="pdf/Kundalini.pdf">کُنڈلینی مراقبے کے بارے میں مزید جانیں</a>
+        </div>
+    </section>
+
+</body>
+
+
+
+
+
+</html>

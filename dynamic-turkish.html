@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>Dinamik Meditasyon</h1>
+
+        <p>Dinamik meditasyon, Osho tarafından geliştirilen, fiziksel hareket, nefes çalışması ve duygusal serbest bırakmayı birleştiren benzersiz bir uygulamadır. Bu teknik, katılımcıların zihinsel bloklardan kurtulmalarına, stresi serbest bırakmalarına ve iç enerjileriyle bağlantı kurmalarına yardımcı olmak için tasarlanmıştır. Aktif, katartik süreçler içerir ve sonunda durgunluk ve farkındalıkla sona erer.</p>
+
+        <!-- Video Bölümü -->
+        <video controls>
+            <source src="mp4/dynamic.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+        <!-- Video İndir -->
+        <div class="cta">
+            <a href="mp4/dynamic.mp4" download="dynamic_meditation_video.mp4" class="download-btn">Videoyu İndir</a>
+        </div>
+        
+        <!-- Ses Bölümü ve İndirme Seçeneği -->
+        <p><strong>Bu meditasyonu uygulamak için:</strong> Ses dosyasını indirin ve aşağıdaki adımları takip ederken dinleyin.</p>
+
+        <!-- Ses Bölümü -->
+        <audio controls>
+            <source src="mp3/Dynamic.mp3" type="audio/mpeg">
+            Tarayıcınız ses öğesini desteklemiyor.
+        </audio>
+
+        <!-- Ses İndir -->
+        <div class="cta">
+            <a href="mp3/Dynamic.mp3" download="Dynamic.mp3">Sesi İndir</a>
+        </div>
+
+        <!-- Meditasyon Adımları -->
+        <div class="step">
+            <h2 class="step-title">1. Hazırlık</h2>
+            <p class="step-description">Sessiz ve özel bir alan bulun. Hareket özgürlüğü sağlayan rahat kıyafetler giyin. Seans boyunca dikkat dağıtıcı unsurların olmadığından emin olun.</p>
+            <img src="images/1.webp" alt="Hazırlık Görüntüsü">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. Adım 1: Kaotik Nefes (10 dakika)</h2>
+            <p class="step-description">Kollarınızı kaldırarak ayakta durun, gözlerinizi kapatın ve burnunuzdan derin ve hızlı nefes alın. Vücudunuzun enerjisini toplaması için kaotik nefes almaya odaklanın.</p>
+            <img src="images/2.webp" alt="Kaotik Nefes Görüntüsü">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. Adım 2: Katarsis (10 dakika)</h2>
+            <p class="step-description">Sahip olduğunuz tüm duyguları tamamen ifade etmenize izin verin. Bağırın, gülün, ağlayın veya hareket edin. Bu aşama, duygusal gerginlikten tamamen kurtulmayı amaçlar.</p>
+            <img src="images/3.webp" alt="Katarsis Görüntüsü">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">4. Adım 3: Zıplama (10 dakika)</h2>
+            <p class="step-description">Gözler kapalı, "Hoo! Hoo! Hoo!" mantrasını söylerken yerinde zıplayın. Ayak tabanlarına indiğinizde sesin bedeninizde yankılanmasına izin verin.</p>
+            <img src="images/4.webp" alt="Zıplama Görüntüsü">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">5. Adım 4: Donma (15 dakika)</h2>
+            <p class="step-description">Zıplama hareketinizin ortasında aniden durun. Vücudunuzu tamamen hareketsiz tutun. Tam bir hareketsizlik içinde kalırken içinizdeki enerji akışını gözlemleyin.</p>
+            <img src="images/5.webp" alt="Donma Görüntüsü">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">6. Adım 5: Kutlama (15 dakika)</h2>
+            <p class="step-description">Donduktan sonra, özgürlük ve neşe içinde dans etmeye başlayın. Hareketlerinizin enerjinizin bir ifadesi olmasına izin verin, yaşamı kısıtlamalar veya engeller olmadan kutlayın.</p>
+            <img src="images/6.webp" alt="Kutlama Görüntüsü">
+        </div>
+
+        <!-- Harekete Geçirme -->
+        <div class="cta">
+            <a href="pdf/dynamic.pdf">Dinamik Meditasyon Hakkında Daha Fazla Bilgi Edinin</a>
+        </div>
+    </section>
+
+</body>
+
+
+
+</html>

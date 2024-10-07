@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Dimensions Meditation</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>ノーディメンションズ瞑想</h1>
+
+        <p>ノーディメンションズ瞑想は、中心化のダンスであり、旋回の準備でもあります。グルジエフのムーブメントに由来し、1時間続きます。3つのステージに分かれており、最初のステージは呼吸に合わせた動き、次に旋回、最後は目を閉じて横たわり、エネルギーの統合を行います。</p>
+
+        <!-- ビデオセクション -->
+        <video controls>
+            <source src="mp4/nodimension.mp4" type="video/mp4">
+            お使いのブラウザはビデオタグをサポートしていません。
+        </video>
+        <!-- ビデオダウンロード -->
+        <div class="cta">
+            <a href="mp4/nodimension.mp4" download="no_dimensions_meditation_video.mp4" class="download-btn">ビデオをダウンロード</a>
+        </div>
+
+        <!-- オーディオセクションとダウンロードオプション -->
+        <p><strong>この瞑想を実践するには:</strong> オーディオをダウンロードし、以下のステップに従って聞いてください。</p>
+
+        <!-- オーディオセクション -->
+        <audio controls>
+            <source src="mp3/no-dimensions.mp3" type="audio/mpeg">
+            お使いのブラウザはオーディオ要素をサポートしていません。
+        </audio>
+
+        <!-- オーディオダウンロード -->
+        <div class="cta">
+            <a href="mp3/no-dimensions.mp3" download="nodimension.mp3">オーディオをダウンロード</a>
+        </div>
+
+        <div class="step">
+            <img src="images/OSHO-No-Dimensions_s.jpg" alt="第一ステージの画像">
+        </div>
+
+        <!-- 瞑想のステップ -->
+        <div class="step">
+            <h2 class="step-title">1. 第一ステージ: 30分</h2>
+            <p class="step-description">
+                6つの動きを30分間繰り返します。手をお腹に置き、次のステップに従ってください：
+            </p>
+            <ul class="step-description">
+                <li><strong>1.</strong> 鼻から息を吸い、手を胸に持っていきます。口から息を吐きながら、右腕と右足を前に出し、左手をお腹に戻します。元の姿勢に戻ります。</li>
+                <li><strong>2.</strong> 左腕と左足を前に出し、右手をお腹に戻す動きを繰り返します。元の姿勢に戻ります。</li>
+                <li><strong>3.</strong> 息を吸いながら、右腕と右足を90度右に動かします。</li>
+                <li><strong>4.</strong> 左腕と左足を90度左に動かす動きを繰り返します。</li>
+                <li><strong>5.</strong> 息を吸いながら、右腕と右足を180度後ろに動かします。</li>
+                <li><strong>6.</strong> 左腕と左足を180度後ろに動かす動きを繰り返します。</li>
+            </ul>
+            <p class="step-description">常に中心（ハラ）から動き、正しいリズムを維持するために音楽を使いましょう。ダンスは途切れなく流れ、時間とともに強度が増していきます。もし体が自然に倒れた場合、それも問題ありません。</p>
+            <img src="images/no-dimension1.jpg" alt="第一ステージの画像">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. 第二ステージ: 旋回 (15分)</h2>
+            <p class="step-description">目を少し開け、腕を伸ばして反時計回りに旋回します。呼吸を正常に保ちながら、旋回の動きに身を任せます。必要に応じて方向を調整し、速度を落として終了します。</p>
+            <img src="images/whirling.jpg" alt="旋回の画像">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. 第三ステージ: 静寂 (15分)</h2>
+            <p class="step-description">目を閉じて横になり、できればうつ伏せで。体内のエネルギーの流れを観察します。</p>
+            <img src="images/sleep.webp" alt="静寂の画像">
+        </div>
+
+        <!-- 行動を促す呼びかけ -->
+        <div class="cta">
+            <a href="pdf/no-dimensions.pdf">ノーディメンションズ瞑想について詳しく学ぶ</a>
+        </div>
+    </section>
+
+</body>
+
+
+
+</html>

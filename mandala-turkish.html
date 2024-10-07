@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandala Meditation</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>Mandala Meditasyonu</h1>
+
+        <p>Mandala Meditasyonu, doğal bir merkezlenme için enerji çemberi oluşturan güçlü ve arındırıcı bir tekniktir. Bu meditasyon, her biri 15 dakika süren dört aşamadan oluşur. Bu süreç, meditasyon yapan kişinin zihnin döngüsel doğasını fark etmesine ve duygular ve düşüncelerin sürekli döngülerini kırmasına yardımcı olur.</p>
+
+        <!-- Video Bölümü -->
+        <video controls>
+            <source src="mp4/mandala.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+        <!-- Video İndir -->
+        <div class="cta">
+            <a href="mp4/mandala.mp4" download="mandala_meditation_video.mp4" class="download-btn">Videoyu İndir</a>
+        </div>
+        
+        <!-- Ses Bölümü ve İndirme Seçeneği -->
+        <p><strong>Bu meditasyonu uygulamak için:</strong> Sesi indirip, aşağıdaki adımları takip ederken dinleyin.</p>
+
+        <!-- Ses Bölümü -->
+        <audio controls>
+            <source src="mp3/Mandala.mp3" type="audio/mpeg">
+            Tarayıcınız ses öğesini desteklemiyor.
+        </audio>
+
+        <!-- Ses İndir -->
+        <div class="cta">
+            <a href="mp3/Mandala.mp3" download="Mandala.mp3">Sesi İndir</a>
+        </div>
+
+        <!-- Meditasyon Adımları -->
+        <div class="step">
+            <h2 class="step-title">1. Birinci Aşama: 15 Dakika</h2>
+            <p class="step-description">
+                Gözleriniz açıkken yerinizde koşun. Yavaş başlayın ve hızı yavaş yavaş artırın. Dizlerinizi mümkün olduğunca yukarı kaldırın. İçinizdeki enerjiyi harekete geçirmek için derin ve eşit nefes alın. Zihni ve bedeni unutun ve koşmaya devam edin.
+            </p>
+            <img src="images/mandala1.webp" alt="Birinci Aşama Görüntüsü">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. İkinci Aşama: 15 Dakika</h2>
+            <p class="step-description">
+                Gözlerinizi kapatın ve ağzınızı açık ve gevşek bırakın. Bedeninizi belden itibaren hafifçe döndürün, rüzgarda salınan bir kamış gibi. Kendinizi sağa sola, öne arkaya doğru hareket ederken hissedin. Bu, uyanmış enerjinizi göbek merkezine getirecektir.
+            </p>
+            <img src="images/mandala2.webp" alt="İkinci Aşama Görüntüsü">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. Üçüncü Aşama: 15 Dakika</h2>
+            <p class="step-description">
+                Sırtüstü uzanın ve gözlerinizi açık tutun. Başınızı sabit tutarak gözlerinizi saat yönünde döndürün. Gözlerinizi yuvalarında tamamen döndürün, sanki büyük bir saatin saniye ibresini takip ediyormuş gibi. Bunu yapabildiğiniz kadar hızlı yapın, ağzınızı açık ve çenenizi gevşek tutun. Yavaş ve eşit nefes alın. Bu, merkezlenmiş enerjinizi üçüncü göze getirir.
+            </p>
+            <img src="images/mandala3.webp" alt="Üçüncü Aşama Görüntüsü">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">4. Dördüncü Aşama: 15 Dakika</h2>
+            <p class="step-description">
+                Gözlerinizi kapatın ve hareketsiz kalın. Bir sessizlik durumuna girin ve deneyimin bütünleşmesine izin verin.
+            </p>
+            <img src="images/sleep.webp" alt="Dördüncü Aşama Görüntüsü">
+        </div>
+
+        <!-- Harekete Geçirme -->
+        <div class="cta">
+            <a href="pdf/mandala.pdf">Mandala Meditasyonu Hakkında Daha Fazla Bilgi Edinin</a>
+        </div>
+    </section>
+
+</body>
+
+
+</html>

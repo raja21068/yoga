@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whirling Meditation</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>Meditación Giratoria</h1>
+
+        <p>La Meditación Giratoria de Osho es una técnica sufí antigua. Mientras todo el cuerpo se mueve, puedes observar que tu centro permanece en silencio y quieto. Esta meditación consta de dos etapas, cada una diseñada para inducir un estado profundo de meditación giratoria.</p>
+
+        <!-- Sección de video -->
+        <video controls>
+            <source src="mp4/whiriling.mp4" type="video/mp4">
+            Su navegador no admite la etiqueta de video.
+        </video>
+        <!-- Descargar video -->
+        <div class="cta">
+            <a href="mp4/whiriling.mp4" download="whirling_meditation_video.mp4" class="download-btn">Descargar Video</a>
+        </div>
+
+        <!-- Sección de audio con opción de descarga -->
+        <p><strong>Para practicar esta meditación:</strong> Descargue el audio y escúchelo mientras sigue los pasos a continuación.</p>
+
+        <!-- Sección de audio -->
+        <audio controls>
+            <source src="mp3/Whirling.mp3" type="audio/mpeg">
+            Su navegador no admite el elemento de audio.
+        </audio>
+
+        <!-- Descargar audio -->
+        <div class="cta">
+            <a href="mp3/Whirling.mp3" download="whirling.mp3">Descargar Audio</a>
+        </div>
+
+        <!-- Pasos de la meditación -->
+        <div class="step">
+            <h2 class="step-title">1. Primera Etapa: 45 Minutos</h2>
+            <p class="step-description">
+                La Giratoria Sufí es una de las técnicas más antiguas y poderosas. Gire con los ojos abiertos, como lo hacen los niños. Su cuerpo se mueve como una rueda mientras su ser interior permanece en el centro. Mantenga su cuerpo suave, los ojos abiertos pero sin enfocarse, y permanezca en silencio.
+            </p>
+            <p class="step-description">
+                Comience lentamente durante los primeros 15 minutos y aumente gradualmente su velocidad durante los siguientes 30 minutos. Cuando esté girando tan rápido que ya no pueda permanecer de pie, su cuerpo caerá naturalmente. No controle ni planee la caída; si su cuerpo está suave, caerá suavemente.
+            </p>
+            <img src="images/whirling.jpg" alt="Imagen de la Primera Etapa">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. Segunda Etapa: 15 Minutos</h2>
+            <p class="step-description">
+                Después de caer, ruede inmediatamente sobre su estómago para que su ombligo esté en contacto con la tierra. Sienta su cuerpo fusionándose con el suelo, como un niño pequeño presionado contra el pecho de la madre. Mantenga los ojos cerrados y permanezca pasivo y en silencio durante al menos 15 minutos.
+            </p>
+            <p class="step-description">
+                Algunas personas pueden sentirse mareadas durante la Meditación Giratoria, pero esto debería desaparecer en dos o tres días. Solo suspenda si persiste.
+            </p>
+            <img src="images/sleep-back.png" alt="Imagen de la Segunda Etapa">
+        </div>
+
+        <!-- Llamado a la acción -->
+        <div class="cta">
+            <a href="pdf/whirling.pdf">Aprende Más Sobre la Meditación Giratoria</a>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whirling Meditation</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>ঘূর্ণায়মান ধ্যান</h1>
+
+        <p>ওশো ঘূর্ণায়মান ধ্যান একটি প্রাচীন সুফি কৌশল। যখন পুরো শরীরটি ঘোরে, তখন আপনি লক্ষ্য করতে পারেন যে আপনার কেন্দ্র নীরব ও স্থির থাকে। এই ধ্যান দুটি পর্যায় নিয়ে গঠিত, যা গভীর ঘূর্ণায়মান ধ্যানের অবস্থায় পৌঁছানোর জন্য ডিজাইন করা হয়েছে।</p>
+
+        <!-- ভিডিও অংশ -->
+        <video controls>
+            <source src="mp4/whiriling.mp4" type="video/mp4">
+            আপনার ব্রাউজার ভিডিও ট্যাগ সমর্থন করে না।
+        </video>
+        <!-- ভিডিও ডাউনলোড -->
+        <div class="cta">
+            <a href="mp4/whiriling.mp4" download="whirling_meditation_video.mp4" class="download-btn">ভিডিও ডাউনলোড করুন</a>
+        </div>
+
+        <!-- অডিও অংশ এবং ডাউনলোড অপশন -->
+        <p><strong>এই ধ্যানটি অনুশীলন করতে:</strong> অডিওটি ডাউনলোড করুন এবং নিচের ধাপগুলি অনুসরণ করে শুনুন।</p>
+
+        <!-- অডিও অংশ -->
+        <audio controls>
+            <source src="mp3/Whirling.mp3" type="audio/mpeg">
+            আপনার ব্রাউজার অডিও এলিমেন্ট সমর্থন করে না।
+        </audio>
+
+        <!-- অডিও ডাউনলোড -->
+        <div class="cta">
+            <a href="mp3/Whirling.mp3" download="whirling.mp3">অডিও ডাউনলোড করুন</a>
+        </div>
+
+        <!-- ধ্যানের ধাপ -->
+        <div class="step">
+            <h2 class="step-title">1. প্রথম ধাপ: 45 মিনিট</h2>
+            <p class="step-description">
+                সুফি ঘূর্ণায়মান ধ্যান সবচেয়ে প্রাচীন এবং শক্তিশালী কৌশলগুলির মধ্যে একটি। চোখ খোলা রেখে ঘুরুন, যেমন বাচ্চারা ঘোরে। আপনার শরীর একটি চাকার মতো ঘোরে, যখন আপনার অভ্যন্তরীণ অস্তিত্ব কেন্দ্রে থাকে। আপনার শরীরকে নরম রাখুন, চোখ খোলা কিন্তু ফোকাস ছাড়া রাখুন এবং নীরব থাকুন।
+            </p>
+            <p class="step-description">
+                প্রথম 15 মিনিট ধীরে শুরু করুন এবং পরবর্তী 30 মিনিটের মধ্যে আপনার গতি ধীরে ধীরে বাড়ান। যখন আপনি এত দ্রুত ঘুরতে থাকেন যে আপনি আর সোজা থাকতে পারেন না, তখন আপনার শরীর স্বাভাবিকভাবে পড়ে যাবে। পড়ার সময় কোনো নিয়ন্ত্রণ বা পরিকল্পনা করবেন না—যদি আপনার শরীর নরম হয়, তবে আপনি নরমভাবে পড়বেন।
+            </p>
+            <img src="images/whirling.jpg" alt="প্রথম ধাপের ছবি">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. দ্বিতীয় ধাপ: 15 মিনিট</h2>
+            <p class="step-description">
+                পড়ে যাওয়ার পরে, সাথে সাথে আপনার পেটে ঘুরুন যাতে আপনার নাভি মাটির সাথে স্পর্শ করে। অনুভব করুন যে আপনার শরীর মাটিতে মিশে যাচ্ছে, ঠিক যেমন একটি শিশু মায়ের বুকে লেগে থাকে। চোখ বন্ধ রাখুন এবং কমপক্ষে 15 মিনিটের জন্য নীরব ও নিষ্ক্রিয় থাকুন।
+            </p>
+            <p class="step-description">
+                কিছু লোক ঘূর্ণায়মান ধ্যানের সময় বমি বমি ভাব অনুভব করতে পারেন, তবে এটি দুই বা তিন দিনের মধ্যে চলে যাবে। যদি না যায়, তবে ধ্যান বন্ধ করুন।
+            </p>
+            <img src="images/sleep-back.png" alt="দ্বিতীয় ধাপের ছবি">
+        </div>
+
+        <!-- কল টু অ্যাকশন -->
+        <div class="cta">
+            <a href="pdf/whirling.pdf">ঘূর্ণায়মান ধ্যান সম্পর্কে আরও জানুন</a>
+        </div>
+    </section>
+
+</body>
+
+
+</html>
