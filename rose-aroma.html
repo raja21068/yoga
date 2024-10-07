@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Osho Mystic Rose Meditation</h1>
+
+        <p><strong>Osho Mystic Rose Meditation</strong> is a three-week transformative therapy designed by Osho to guide participants from emotional release to inner peace. Representing the blooming of a rose, this therapy addresses deep-seated emotions and awakens participants to their true essence through laughter, tears, and silent observation.</p>
+
+ <!-- Audio Section -->
+        <audio controls>
+            <source src="mp3/rose.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Download Audio -->
+        <div class="cta">
+            <a href="mp3/rose.mp3" download="rose.mp3">Download Audio</a>
+        </div>
+		
+		<!-- Audio Section with Download Option -->
+        <p><strong>To practice this meditation:</strong> Download the audio and listen to it while following.</p>
+
+        <!-- Week 1: Laughter -->
+        <div class="step" style="background-color: #ffe6e6; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+            <h2 class="step-title" style="color: #e57373;">First Week: Laughter</h2>
+            <p>For the first week, participants engage in <strong>three hours of spontaneous laughter</strong> each day. This laughter dissolves emotional blocks, releasing repressed feelings and bringing a natural sense of joy and spontaneity.</p>
+            <img src="images/laughter1.jpeg" alt="Laughter Meditation" style="width:100%; border-radius: 10px; margin-top: 10px;">
+        </div>
+
+        <!-- Week 2: Crying -->
+        <div class="step" style="background-color: #e6f2ff; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+            <h2 class="step-title" style="color: #64b5f6;">Second Week: Crying</h2>
+            <p>In the second week, participants spend <strong>three hours each day crying</strong> to release pain, sadness, and emotional burdens. This cathartic process facilitates emotional healing and transformation.</p>
+			  <img src="images/crying.jpg" alt="Laughter Meditation" style="width:100%; border-radius: 10px; margin-top: 10px;">
+        </div>
+
+        <!-- Week 3: Silent Witnessing -->
+        <div class="step" style="background-color: #e6ffe6; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+            <h2 class="step-title" style="color: #81c784;">Third Week: Silent Witnessing</h2>
+            <p>In the final week, participants sit quietly for <strong>three hours in silent meditation</strong>, observing their inner experiences without judgment. This phase fosters a state of calm self-awareness and grounds participants in a peaceful presence.</p>
+			<img src="images/witness.webp" alt="Resting in Silence">
+        </div>
+
+        <!-- Additional Guidance -->
+        <div class="step" style="background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
+            <h2 class="step-title" style="color: #9e9e9e;">Additional Guidance</h2>
+            <p class="step-description">Mystic Rose Meditation combines catharsis with mindfulness, creating a supportive environment for inner exploration. The therapy is conducted with minimal interaction, allowing participants to undergo a personal, introspective journey supported by the group’s energy.</p>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta" style="text-align: center; margin-top: 20px;">
+            <a href="pdf/mystic_rose_guide.pdf" style="background-color: #d81b60; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Learn More About Mystic Rose Meditation</a>
+        </div>
+    </section>
+</body>
+
+</html>
