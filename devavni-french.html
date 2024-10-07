@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kundalini</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>Méditation Devavani</h1>
+
+        <p>Dans cette méditation d'une heure, une langue douce et inconnue s'exprime à travers le méditant, qui devient un récipient vide. Elle relaxe profondément l'esprit et crée une paix intérieure. Si elle est pratiquée le soir avant de se coucher, elle favorise également un sommeil profond.</p>
+
+        <!-- Section audio avec option de téléchargement -->
+        <p><strong>Comment pratiquer :</strong> Téléchargez l'audio et suivez les étapes pour votre méditation.</p>
+
+        <!-- Section vidéo -->
+        <video controls>
+            <source src="mp4/devavani.mp4" type="video/mp4">
+            Votre navigateur ne prend pas en charge la balise vidéo.
+        </video>
+        <!-- Télécharger la vidéo -->
+        <div class="cta">
+            <a href="mp4/devavani.mp4" download="devavani.mp4" class="download-btn">Télécharger Vidéo</a>
+        </div>
+
+        <!-- Section audio -->
+        <audio controls>
+            <source src="mp3/devavani.mp3" type="audio/mpeg">
+            Votre navigateur ne prend pas en charge l'élément audio.
+        </audio>
+
+        <!-- Télécharger l'audio -->
+        <div class="cta">
+            <a href="mp3/devavani.mp3" download="devavani.mp3">Télécharger Audio</a>
+        </div>
+
+        <!-- Étapes de la méditation -->
+        <div class="step">
+            <h2 class="step-title">Première Étape : 15 minutes</h2>
+            <p class="step-description">Asseyez-vous tranquillement pendant que la musique joue.</p>
+            <img src="images/humming.webp" alt="Étape de Méditation 1">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">Deuxième Étape : 15 minutes</h2>
+            <p class="step-description">Commencez à faire des sons sans signification, par exemple, “la la la,” et continuez jusqu'à ce que des sons inconnus, semblables à des mots, apparaissent. Ces sons doivent venir de la partie inconnue du cerveau utilisée dans l'enfance, avant que les mots ne soient appris. Adoptez une intonation douce et conversationnelle ; ne pleurez pas, ne criez pas, ne riez pas, ni ne hurlez.</p>
+            <img src="images/lalala.webp" alt="Étape de Méditation 2">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">Troisième Étape : 15 minutes</h2>
+            <p class="step-description">Levez-vous et continuez cette langue inconnue, permettant à votre corps de bouger en douceur en harmonie avec le son. Si votre corps est détendu, les énergies subtiles créeront un Latihan – un mouvement spontané, sans structure, hors de votre contrôle.</p>
+            <img src="images/unfamiliar-language.webp" alt="Étape de Méditation 3">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">Quatrième Étape : 15 minutes</h2>
+            <p class="step-description">Allongez-vous et restez immobile. Abandonnez toute pensée et reposez-vous profondément, absorbant l'énergie et le calme générés durant la méditation.</p>
+            <img src="images/sleep.webp" alt="Étape de Méditation 4">
+        </div>
+
+        <!-- Appel à l'action -->
+        <div class="cta">
+            <a href="pdf/OshoDevavani.pdf">En savoir plus sur la Méditation Devavani</a>
+        </div>
+    </section>
+
+</body>
+
+
+</html>

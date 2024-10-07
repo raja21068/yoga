@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kundalini</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>クンダリーニ瞑想</h1>
+
+        <p>クンダリーニ瞑想は、ヒンドゥー教、タントラ、シーク教を含む様々な伝統に根ざした精神的な実践です。呼吸法、動き、瞑想を組み合わせて、身体のエネルギーを目覚めさせ、導きます。以下は、完全なクンダリーニ瞑想セッションのステップです。</p>
+
+        <!-- ビデオセクション -->
+        <video controls>
+            <source src="mp4/kundalini.mp4" type="video/mp4">
+            お使いのブラウザはビデオタグをサポートしていません。
+        </video>
+        <!-- ビデオダウンロード -->
+        <div class="cta">
+            <a href="mp4/kundalini.mp4" download="dynamic_meditation_video.mp4" class="download-btn">ビデオをダウンロード</a>
+        </div>
+        
+        <!-- オーディオセクションとダウンロードオプション -->
+        <p><strong>この瞑想を実践するには:</strong> オーディオをダウンロードし、以下のステップに従って聞いてください。</p>
+
+        <!-- オーディオセクション -->
+        <audio controls>
+            <source src="mp3/Kundalini.mp3" type="audio/mpeg">
+            お使いのブラウザはオーディオ要素をサポートしていません。
+        </audio>
+
+        <!-- オーディオダウンロード -->
+        <div class="cta">
+            <a href="mp3/Kundalini.mp3" download="Kundalini.mp3">オーディオをダウンロード</a>
+        </div>
+
+        <!-- 瞑想のステップ -->
+        <div class="step">
+            <h2 class="step-title">1. リラックスして全身を揺らす（15分）</h2>
+            <p class="step-description">リラックスして立ち、全身を揺らすようにしてください。足元からエネルギーが上がってくるのを感じ、完全に解放します。目を開けたままでも閉じたままでも、自然に揺れを感じて、無理にしないでください。</p>
+            <img src="images/shaking.webp" alt="全身を揺らすイメージ">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. 自由に踊る（15分）</h2>
+            <p class="step-description">自由に感じたままに踊ってください。制約なしに体が自然に動くようにし、目を開けたままでも閉じたままでも、緊張を解放しながら動きを自然にさせてください。</p>
+            <img src="images/dance.webp" alt="ダンスイメージ">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. 観察する（15分）</h2>
+            <p class="step-description">目を閉じて静かに座るか立ってください。内外で起こっていることを観察し、ただの観察者になってください。エネルギーと感覚が流れるままにし、判断や干渉をせず、ただ観察してください。</p>
+            <img src="images/witness.webp" alt="観察イメージ">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">4. 静止と休息（15分）</h2>
+            <p class="step-description">最後のステージでは、目を閉じたまま横になり、完全に静止します。考えを手放し、瞑想中に生まれたエネルギーと静けさを吸収しながら深く休息してください。</p>
+            <img src="images/stillness.webp" alt="静止イメージ">
+        </div>
+
+        <!-- クンダリーニ瞑想の追加説明 -->
+        <div class="step">
+            <h2 class="step-title">ステップ1のガイダンス：揺れを自然に起こさせる</h2>
+            <p class="step-description">クンダリーニ瞑想を行うとき、揺れを無理にしないでください。静かに立ち、自然に揺れが起こるままにします。体が揺れ始めたら、それを流れるままにして、制御しないでください。揺れの喜びを感じ、それをコントロールしようとしないでください。リラックスしてプロセスを楽しむほど、瞑想はより自然で効果的になります。</p>
+        </div>
+
+        <!-- 行動を促す呼びかけ -->
+        <div class="cta">
+            <a href="pdf/Kundalini.pdf">クンダリーニ瞑想について詳しく知る</a>
+        </div>
+    </section>
+
+</body>
+
+
+
+</html>

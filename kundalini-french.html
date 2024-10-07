@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kundalini</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>Méditation Kundalini</h1>
+
+        <p>La méditation Kundalini est une pratique spirituelle enracinée dans diverses traditions, notamment l'hindouisme, le tantra et le sikhisme. Elle combine des exercices de respiration, des mouvements et de la méditation pour éveiller et canaliser l'énergie du corps. Voici les étapes pour une séance complète de méditation Kundalini.</p>
+
+        <!-- Section Vidéo -->
+        <video controls>
+            <source src="mp4/kundalini.mp4" type="video/mp4">
+            Votre navigateur ne prend pas en charge la balise vidéo.
+        </video>
+        <!-- Télécharger Vidéo -->
+        <div class="cta">
+            <a href="mp4/kundalini.mp4" download="dynamic_meditation_video.mp4" class="download-btn">Télécharger Vidéo</a>
+        </div>
+        
+        <!-- Section Audio avec Option de Téléchargement -->
+        <p><strong>Pour pratiquer cette méditation :</strong> Téléchargez l'audio et écoutez-le tout en suivant les étapes ci-dessous.</p>
+
+        <!-- Section Audio -->
+        <audio controls>
+            <source src="mp3/Kundalini.mp3" type="audio/mpeg">
+            Votre navigateur ne prend pas en charge l'élément audio.
+        </audio>
+
+        <!-- Télécharger Audio -->
+        <div class="cta">
+            <a href="mp3/Kundalini.mp3" download="Kundalini.mp3">Télécharger Audio</a>
+        </div>
+
+        <!-- Étapes de la Méditation -->
+        <div class="step">
+            <h2 class="step-title">1. Relâchez-vous et secouez tout votre corps (15 minutes)</h2>
+            <p class="step-description">Tenez-vous détendu, en permettant à tout votre corps de trembler. Sentez l'énergie monter de vos pieds et lâchez prise complètement. Vous pouvez garder les yeux ouverts ou fermés, en laissant le tremblement se produire naturellement sans le forcer.</p>
+            <img src="images/shaking.webp" alt="Image de Tremblement du Corps">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. Dansez librement (15 minutes)</h2>
+            <p class="step-description">Dansez comme vous le ressentez. Laissez tout votre corps se mouvoir comme il le souhaite, sans restrictions. Que vos yeux soient ouverts ou fermés, laissez les mouvements venir naturellement tout en libérant toute tension.</p>
+            <img src="images/dance.webp" alt="Image de Danse">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. Témoignage (15 minutes)</h2>
+            <p class="step-description">Asseyez-vous ou restez immobile avec les yeux fermés. Observez et soyez témoin de ce qui se passe à l'intérieur et à l'extérieur de vous. Permettez à l'énergie et aux sensations de circuler, en étant simplement témoin sans jugement ni intervention.</p>
+            <img src="images/witness.webp" alt="Image de Témoignage">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">4. Immobilité et repos (15 minutes)</h2>
+            <p class="step-description">Dans cette dernière étape, allongez-vous les yeux fermés et restez complètement immobile. Laissez aller toute pensée et reposez-vous profondément, absorbant l'énergie et le calme générés pendant la méditation.</p>
+            <img src="images/stillness.webp" alt="Image d'Immobilité">
+        </div>
+
+        <!-- Explication supplémentaire de la Méditation Kundalini -->
+        <div class="step">
+            <h2 class="step-title">Conseils pour l'Étape 1 : Laissez le tremblement se produire naturellement</h2>
+            <p class="step-description">Lorsque vous pratiquez la Méditation Kundalini, ne forcez pas le tremblement. Tenez-vous tranquillement et laissez-le se produire naturellement. Si votre corps commence à trembler, laissez-le couler sans le contrôler. Ressentez la joie du tremblement sans essayer de le diriger. Plus vous vous détendez et profitez du processus, plus la méditation sera naturelle et efficace.</p>
+        </div>
+
+        <!-- Appel à l'Action -->
+        <div class="cta">
+            <a href="pdf/Kundalini.pdf">En savoir plus sur la Méditation Kundalini</a>
+        </div>
+    </section>
+
+</body>
+
+</html>
