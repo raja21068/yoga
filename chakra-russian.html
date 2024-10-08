@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chackra</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+		.step-points {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.step-points li {
+    background-color: #f3e5f5;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    line-height: 1.5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.step-points li strong {
+    color: #8e24aa;
+}
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Медитация Дыхания через Чакры</h1>
+
+        <p>Медитация дыхания через чакры — это практика, направленная на привнесение осознанности и энергии в каждую из семи чакр. Это активная медитация, которая использует быстрое дыхание и легкие движения для восстановления энергии чакр под музыку, что создает направляемый опыт. Следуйте приведенным ниже шагам, чтобы исследовать каждую чакру.</p>
+
+        <!-- Секция Видео -->
+        <video controls>
+            <source src="mp4/chackra.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+        
+        <!-- Скачать Видео -->
+        <div class="cta">
+            <a href="mp4/chackra.mp4" download="chackra.mp4" class="download-btn">Скачать Видео</a>
+        </div>
+
+        <!-- Секция Аудио с Опцией Скачивания -->
+        <p><strong>Для выполнения этой медитации:</strong> Скачайте аудио и слушайте его, следуя приведенным ниже шагам.</p>
+        
+        <!-- Секция Аудио -->
+        <audio controls>
+            <source src="mp3/chakra.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио элемент.
+        </audio>
+        
+        <!-- Скачать Аудио -->
+        <div class="cta">
+            <a href="mp3/chakra.mp3" download="chakra.mp3">Скачать Аудио</a>
+        </div>
+
+        <!-- Шаги Медитации -->
+        <div class="step">
+            <h2 class="step-title">Первый Этап: Дыхание вверх через каждую чакру (45 минут)</h2>
+            <ul class="step-points">
+                <li><strong>Встаньте удобно:</strong> Поставьте ноги на ширину плеч, сохраняйте расслабленное состояние тела.</li>
+                <li><strong>Сфокусируйтесь на первой чакре:</strong> Начните глубокое, быстрое дыхание с открытым ртом, направляя его в область таза (первая чакра).</li>
+                <li><strong>Поднимайтесь с каждым звоном колокольчика:</strong> С каждым звоном переключайтесь на следующую чакру, делая дыхание более легким и быстрым.</li>
+                <li><strong>Сохраняйте естественное движение:</strong> Позвольте легким движениям тела, но удерживайте ноги на земле.</li>
+                <li><strong>Оставайтесь расслабленными:</strong> Держите суставы расслабленными, погружаясь в ощущения каждой чакры.</li>
+                <li><strong>После достижения седьмой чакры:</strong> Постепенно дайте дыханию спуститься вниз через каждую чакру.</li>
+            </ul>
+            <img src="images/chackra.png" alt="Дыхание вверх через чакры">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">Второй Этап: Отдых и Тишина (15 минут)</h2>
+            <p class="step-description">После дыхательных циклов сядьте или лягте, закрыв глаза. Войдите в состояние покоя и наблюдения, чувствуя внутренние ощущения без оценки. Этот этап помогает интегрировать энергию и осознанность, созданные во время дыхания.</p>
+            <img src="images/witness.webp" alt="Отдых в тишине">
+        </div>
+
+        <!-- Дополнительное Руководство по Медитации Чакр -->
+        <div class="step">
+            <h2 class="step-title">Дополнительные Советы</h2>
+            <p class="step-description">В этой медитации пусть дыхание станет мостом к ощущению уникальной энергии каждой чакры. Не заставляйте дыхание; вместо этого позвольте осознанности мягко проникать в каждую чакру при каждом вдохе. Со временем вы начнете естественно распознавать ощущения, связанные с каждой чакрой, что приведет к более глубокому соединению с каждым энергетическим центром.</p>
+        </div>
+
+        <!-- Призыв к Действию -->
+        <div class="cta">
+            <a href="pdf/chakra.pdf">Узнайте больше о медитации дыхания через чакры</a>
+        </div>
+    </section>
+</body>
+
+
+</html>

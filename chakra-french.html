@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chackra</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+		.step-points {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.step-points li {
+    background-color: #f3e5f5;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    line-height: 1.5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.step-points li strong {
+    color: #8e24aa;
+}
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Méditation de Respiration des Chakras</h1>
+
+        <p>La Méditation de Respiration des Chakras est une pratique qui apporte conscience et énergie à chacun des sept chakras. Cette méditation active utilise une respiration rapide et des mouvements doux pour revitaliser les chakras, accompagnée de musique pour une expérience guidée. Suivez les étapes ci-dessous pour explorer chaque chakra.</p>
+
+        <!-- Section Vidéo -->
+        <video controls>
+            <source src="mp4/chackra.mp4" type="video/mp4">
+            Votre navigateur ne prend pas en charge la balise vidéo.
+        </video>
+        
+        <!-- Télécharger Vidéo -->
+        <div class="cta">
+            <a href="mp4/chackra.mp4" download="chackra.mp4" class="download-btn">Télécharger Vidéo</a>
+        </div>
+
+        <!-- Section Audio avec Option de Téléchargement -->
+        <p><strong>Pour pratiquer cette méditation :</strong> Téléchargez l'audio et écoutez-le en suivant les étapes ci-dessous.</p>
+        
+        <!-- Section Audio -->
+        <audio controls>
+            <source src="mp3/chakra.mp3" type="audio/mpeg">
+            Votre navigateur ne prend pas en charge l'élément audio.
+        </audio>
+        
+        <!-- Télécharger Audio -->
+        <div class="cta">
+            <a href="mp3/chakra.mp3" download="chakra.mp3">Télécharger Audio</a>
+        </div>
+
+        <!-- Étapes de la Méditation -->
+        <div class="step">
+            <h2 class="step-title">Première Étape : Respiration Montante à Travers Chaque Chakra (45 minutes)</h2>
+            <ul class="step-points">
+                <li><strong>Tenez-vous confortablement :</strong> Positionnez vos pieds à la largeur des épaules, en gardant le corps détendu.</li>
+                <li><strong>Concentrez-vous sur le premier chakra :</strong> Commencez une respiration profonde et rapide dirigée vers la zone pelvienne (premier chakra) avec la bouche ouverte.</li>
+                <li><strong>Montez avec chaque son de cloche :</strong> Changez de chakra à chaque son, rendant chaque étape plus douce et rapide.</li>
+                <li><strong>Maintenez un mouvement naturel :</strong> Autorisez de légers mouvements du corps, comme des secousses ou des étirements, mais gardez vos pieds au sol.</li>
+                <li><strong>Restez détendu :</strong> Gardez vos articulations relâchées et concentrez-vous sur les sensations de chaque chakra.</li>
+                <li><strong>Après avoir atteint le septième chakra :</strong> Laissez la respiration redescendre doucement à travers chaque chakra.</li>
+            </ul>
+            <img src="images/chackra.png" alt="Respiration Montante à Travers les Chakras">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">Deuxième Étape : Repos et Silence (15 minutes)</h2>
+            <p class="step-description">Après les cycles de respiration, asseyez-vous ou allongez-vous les yeux fermés. Entrez dans un état de calme et d'observation, ressentant les sensations sans jugement. Cette étape permet d'intégrer l'énergie et la conscience développées pendant la respiration.</p>
+            <img src="images/witness.webp" alt="Repos en Silence">
+        </div>
+
+        <!-- Explication Supplémentaire de la Méditation des Chakras -->
+        <div class="step">
+            <h2 class="step-title">Conseils Supplémentaires</h2>
+            <p class="step-description">Dans cette méditation, laissez la respiration servir de pont pour ressentir l'énergie unique de chaque chakra. Ne forcez pas la respiration; permettez à votre conscience de s'installer doucement dans chaque chakra. Avec le temps, vous commencerez naturellement à reconnaître les sensations associées à chaque chakra, établissant une connexion plus profonde avec chaque centre d'énergie.</p>
+        </div>
+
+        <!-- Appel à l'Action -->
+        <div class="cta">
+            <a href="pdf/chakra.pdf">En savoir plus sur la Méditation de Respiration des Chakras</a>
+        </div>
+    </section>
+</body>
+
+
+</html>

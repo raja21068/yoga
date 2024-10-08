@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nataraj Meditation</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>मैं कौन हूँ ध्यान</h1>
+
+        <p>यह ध्यान ओशो की श्रृंखला "मैं कौन हूँ" से है, जो श्वास की जागरूकता और आत्म-परीक्षा पर केंद्रित है। इसका उद्देश्य श्वास, भावनाओं, और आत्म-पहचान के प्रश्न के बीच संबंध को देखकर गहन चेतना की स्थिति प्राप्त करना है।</p>
+
+        <!-- ऑडियो और डाउनलोड अनुभाग -->
+        <p><strong>कैसे करें:</strong> ऑडियो डाउनलोड करें और इन चरणों का अनुसरण करें।</p>
+
+        <!-- ऑडियो अनुभाग -->
+        <audio controls>
+            <source src="mp3/Main_Kaun_Hun_06.mp3" type="audio/mpeg">
+            आपका ब्राउज़र ऑडियो तत्व का समर्थन नहीं करता।
+        </audio>
+
+        <!-- ऑडियो डाउनलोड करें -->
+        <div class="cta">
+            <a href="mp3/Main_Kaun_Hun_06.mp3" download="Main_Kaun_Hun_06.mp3">ऑडियो डाउनलोड करें</a>
+        </div>
+
+        <!-- ध्यान के चरण -->
+        <div class="step">
+            <h2 class="step-title">1. अपनी श्वास पर ध्यान केंद्रित करें</h2>
+            <p class="step-description">आराम से बैठें, आँखें बंद करें और अपनी प्राकृतिक श्वास पर ध्यान केंद्रित करें। देखिए कैसे आपकी मानसिक स्थिति आपके श्वास को प्रभावित करती है। इसे नियंत्रित करने की कोशिश न करें, बस इसे देखने वाले बने रहें।</p>
+            <img src="images/mainkunhn1.webp" alt="श्वास पर ध्यान केंद्रित">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. अपनी श्वास धीमी करें</h2>
+            <p class="step-description">धीरे-धीरे अपनी श्वास को धीमा और गहरा बनाएं। ध्यान दें कि जैसे-जैसे आप धीरे-धीरे श्वास लेते हैं, भावनाएँ जैसे क्रोध और चिंता कम होती जाती हैं।</p>
+            <img src="images/mainkunhn2.webp" alt="श्वास धीमी करना">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. सवाल पूछें "मैं कौन हूँ?"</h2>
+            <p class="step-description">श्वास पर ध्यान देते हुए, खुद से "मैं कौन हूँ?" का सवाल पूछें। यह आत्म-परिचय से परे जाने में मदद करेगा ताकि आप अपने सच्चे स्वरूप का अनुभव कर सकें।</p>
+            <img src="images/mainkunhn3.webp" alt="मैं कौन हूँ? पूछना">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">4. प्रतिदिन अभ्यास करें</h2>
+            <p class="step-description">ओशो सुझाव देते हैं कि इस ध्यान को सुबह और शाम दैनिक रूप से अभ्यास करें। निरंतरता आपको आत्म-जागरूकता की एक गहरी स्थिति में पहुँचने में सहायता करेगी।</p>
+        </div>
+    </section>
+</body>
+
+
+</html>

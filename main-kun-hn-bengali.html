@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nataraj Meditation</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>"আমি কে" ধ্যান</h1>
+
+        <p>ওশোর "আমি কে" সিরিজ থেকে এই ধ্যানটি শ্বাসের সচেতনতা এবং আত্ম-অনুসন্ধানের উপর ভিত্তি করে। লক্ষ্য হল শ্বাস, আবেগ এবং আত্মপরিচয়ের প্রশ্নের মধ্যে সম্পর্ক পর্যবেক্ষণ করে গভীরতর সচেতনতার স্তরে পৌঁছানো।</p>
+
+        <!-- অডিও এবং ডাউনলোড বিভাগ -->
+        <p><strong>কিভাবে অনুশীলন করবেন:</strong> অডিও ডাউনলোড করুন এবং এই পদক্ষেপগুলি অনুসরণ করুন।</p>
+
+        <!-- অডিও বিভাগ -->
+        <audio controls>
+            <source src="mp3/Main_Kaun_Hun_06.mp3" type="audio/mpeg">
+            আপনার ব্রাউজার অডিও উপাদানটি সমর্থন করে না।
+        </audio>
+
+        <!-- অডিও ডাউনলোড -->
+        <div class="cta">
+            <a href="mp3/Main_Kaun_Hun_06.mp3" download="Main_Kaun_Hun_06.mp3">অডিও ডাউনলোড করুন</a>
+        </div>
+
+        <!-- ধ্যানের ধাপসমূহ -->
+        <div class="step">
+            <h2 class="step-title">1. আপনার শ্বাসে মনোযোগ দিন</h2>
+            <p class="step-description">আরামদায়কভাবে বসুন, চোখ বন্ধ করুন এবং আপনার প্রাকৃতিক শ্বাসের উপর মনোযোগ দিন। দেখুন কীভাবে মানসিক অবস্থা আপনার শ্বাসকে প্রভাবিত করে। এটিকে নিয়ন্ত্রণ করার চেষ্টা করবেন না, কেবল একজন দর্শক হিসেবে থাকুন।</p>
+            <img src="images/mainkunhn1.webp" alt="শ্বাসে মনোযোগ">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. শ্বাস ধীরে নিন</h2>
+            <p class="step-description">ধীরে ধীরে শ্বাস নেওয়ার গতি কমান। লক্ষ করুন কিভাবে ধীর ও গভীর শ্বাসের সাথে রাগ বা উদ্বেগের মতো আবেগগুলি কম শক্তিশালী হয়ে ওঠে।</p>
+            <img src="images/mainkunhn2.webp" alt="শ্বাস ধীরে নেওয়া">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. প্রশ্ন করুন "আমি কে?"</h2>
+            <p class="step-description">শ্বাসের প্রতি মনোযোগ রেখে, "আমি কে?" এই প্রশ্নটি করতে শুরু করুন। এটি আপনাকে আপনার সত্যিকারের স্বকে অভিজ্ঞতার মাধ্যমে আপনার পরিচিতি ও ভূমিকা অতিক্রম করতে সহায়তা করবে।</p>
+            <img src="images/mainkunhn3.webp" alt="প্রশ্ন করুন আমি কে?">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">4. প্রতিদিন অনুশীলন করুন</h2>
+            <p class="step-description">ওশো প্রতিদিন সকালে এবং
+
+
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chackra</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+		.step-points {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.step-points li {
+    background-color: #f3e5f5;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    line-height: 1.5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.step-points li strong {
+    color: #8e24aa;
+}
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>چکرا سانس مراقبہ</h1>
+
+        <p>چکرا سانس مراقبہ ایک مشق ہے جو ساتوں چکروں میں شعور اور توانائی لاتی ہے۔ یہ ایک متحرک مراقبہ ہے جو چکروں کو تازہ دم کرنے کے لیے تیز سانس لینے اور نرم حرکت کا استعمال کرتا ہے، اور اس کا تجربہ موسیقی کے ذریعے رہنمائی کے ساتھ ہوتا ہے۔ ہر چکر کو جاننے کے لیے نیچے دیے گئے مراحل پر عمل کریں۔</p>
+
+        <!-- ویڈیو سیکشن -->
+        <video controls>
+            <source src="mp4/chackra.mp4" type="video/mp4">
+            آپ کا براؤزر ویڈیو کو سپورٹ نہیں کرتا۔
+        </video>
+        
+        <!-- ویڈیو ڈاؤن لوڈ کریں -->
+        <div class="cta">
+            <a href="mp4/chackra.mp4" download="chackra.mp4" class="download-btn">ویڈیو ڈاؤن لوڈ کریں</a>
+        </div>
+
+        <!-- آڈیو سیکشن اور ڈاؤن لوڈ کا آپشن -->
+        <p><strong>اس مراقبہ کا مشق کرنے کے لیے:</strong> آڈیو ڈاؤن لوڈ کریں اور نیچے دیے گئے مراحل کے مطابق سنیں۔</p>
+        
+        <!-- آڈیو سیکشن -->
+        <audio controls>
+            <source src="mp3/chakra.mp3" type="audio/mpeg">
+            آپ کا براؤزر آڈیو کو سپورٹ نہیں کرتا۔
+        </audio>
+        
+        <!-- آڈیو ڈاؤن لوڈ کریں -->
+        <div class="cta">
+            <a href="mp3/chakra.mp3" download="chakra.mp3">آڈیو ڈاؤن لوڈ کریں</a>
+        </div>
+
+        <!-- مراقبہ کے مراحل -->
+        <div class="step">
+            <h2 class="step-title">پہلا مرحلہ: ہر چکر کے ذریعے سانس لینا (45 منٹ)</h2>
+            <ul class="step-points">
+                <li><strong>آرام دہ کھڑے ہوں:</strong> اپنے پیروں کو کندھے کے برابر چوڑائی پر رکھیں اور جسم کو آرام دیں۔</li>
+                <li><strong>پہلے چکر پر توجہ مرکوز کریں:</strong> کھلے منہ سے تیز اور گہرا سانس لینا شروع کریں اور سانس کو پیلویس (پہلا چکر) کی طرف مرکوز کریں۔</li>
+                <li><strong>ہر گھنٹی کے ساتھ اوپر جائیں:</strong> ہر گھنٹی کے ساتھ اپنی سانس اگلے چکر پر منتقل کریں، ہر مرحلے کو نرم اور تیز بنائیں۔</li>
+                <li><strong>قدرتی حرکت کو برقرار رکھیں:</strong> جسم کی ہلکی حرکت کی اجازت دیں، لیکن اپنے پیروں کو زمین پر رکھیں۔</li>
+                <li><strong>آرام سے رہیں:</strong> اپنے جوڑوں کو ڈھیلا رکھیں اور ہر چکر کی محسوسات میں اپنی توجہ مرکوز کریں۔</li>
+                <li><strong>ساتویں چکر تک پہنچنے کے بعد:</strong> اپنی سانس کو ہر چکر کے ذریعے آہستہ سے واپس نیچے آنے دیں۔</li>
+            </ul>
+            <img src="images/chackra.png" alt="چکروں کے ذریعے سانس لینا">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">دوسرا مرحلہ: آرام اور خاموشی (15 منٹ)</h2>
+            <p class="step-description">سانس کے چکر مکمل کرنے کے بعد، آنکھیں بند کر کے بیٹھیں یا لیٹ جائیں۔ سکون کی حالت میں داخل ہوں اور اندرونی محسوسات کا بغیر کسی فیصلہ کے مشاہدہ کریں۔ یہ مرحلہ سانس کے دوران حاصل کی گئی توانائی اور شعور کو مربوط کرنے میں مدد کرتا ہے۔</p>
+            <img src="images/witness.webp" alt="خاموشی میں آرام">
+        </div>
+
+        <!-- اضافی چکرا مراقبہ کی وضاحت -->
+        <div class="step">
+            <h2 class="step-title">اضافی رہنمائی</h2>
+            <p class="step-description">اس مراقبہ میں، سانس کو ہر چکر کی منفرد توانائی کو محسوس کرنے کے ایک پل کے طور پر استعمال کریں۔ سانس کو مجبور نہ کریں؛ بلکہ ہر سانس کے ساتھ اپنی توجہ کو نرمی سے ہر چکر میں مرکوز ہونے دیں۔ وقت کے ساتھ، آپ قدرتی طور پر ہر چکر کے ساتھ منسلک محسوسات کو پہچاننے لگیں گے، جو ہر توانائی کے مرکز کے ساتھ گہرے تعلق کا باعث بنے گا۔</p>
+        </div>
+
+        <!-- کارروائی کے لیے کال -->
+        <div class="cta">
+            <a href="pdf/chakra.pdf">چکرا سانس مراقبہ کے بارے میں مزید جانیں</a>
+        </div>
+    </section>
+</body>
+
+
+
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nataraj Meditation</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>কীর্তন মেডিটেশন</h1>
+
+        <p>এই বিশেষ কীর্তন, গান, নাচ এবং স্থিতির সংমিশ্রণ, এক ঘন্টার সেশনে তিনটি অংশে বিভক্ত: আনন্দময় কীর্তন, গভীর স্থিরতা এবং শেষ উদযাপন।</p>
+
+        <!-- অডিও এবং ডাউনলোড বিভাগ -->
+        <p><strong>কিভাবে অনুশীলন করবেন:</strong> অডিও ডাউনলোড করুন এবং এই সহজ ধাপগুলি অনুসরণ করুন।</p>
+
+        <!-- অডিও বিভাগ -->
+        <audio controls>
+            <source src="mp3/Kirtan1.mp3" type="audio/mpeg">
+            আপনার ব্রাউজার অডিও উপাদানটি সমর্থন করে না।
+        </audio>
+
+        <!-- অডিও ডাউনলোড -->
+        <div class="cta">
+            <a href="mp3/Kirtan1.mp3" download="Kirtan1.mp3">অডিও ডাউনলোড করুন</a>
+        </div>
+
+        <!-- অডিও বিভাগ -->
+        <audio controls>
+            <source src="mp3/Kirtan2.mp3" type="audio/mpeg">
+            আপনার ব্রাউজার অডিও উপাদানটি সমর্থন করে না।
+        </audio>
+
+        <!-- অডিও ডাউনলোড -->
+        <div class="cta">
+            <a href="mp3/Kirtan2.mp3" download="Kirtan2.mp3">অডিও ডাউনলোড করুন</a>
+        </div>
+
+        <!-- ধ্যানের ধাপসমূহ -->
+        <div class="step">
+            <h2 class="step-title">1. প্রথম ২০ মিনিট: কীর্তন</h2>
+            <p class="step-description">গান গাও, তালি দাও, নাচো এবং প্রাণবন্তভাবে নড়াচড়া করো।</p>
+            <img src="images/kirtan1.webp" alt="প্রথম স্তরের ছবি">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. মাঝের ২০ মিনিট: স্থিরতা</h2>
+            <p class="step-description">মুখ নিচু করে মাটিতে শুয়ে থাকুন। সম্পূর্ণ শান্ত ও নিরব থাকুন, যেন প্রাণহীন।</p>
+            <img src="images/kirtan2.webp" alt="দ্বিতীয় স্তরের ছবি">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. শেষ ২০ মিনিট: উদযাপন</h2>
+            <p class="step-description">উঠুন এবং আবার গান গাও, নাচো এবং তালি দাও! এবার আনন্দ ও কৃতজ্ঞতার সাথে উদযাপন করুন।</p>
+            <img src="images/kirtan3.webp" alt="তৃতীয় স্তরের ছবি">
+        </div>
+    </section>
+</body>
+
+
+</html>

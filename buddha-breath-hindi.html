@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nataraj Meditation</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body> 
+    <section>
+        <h1>अनापानसति योग (श्वास जागरूकता ध्यान)</h1>
+
+        <p>ओशो द्वारा सिखाया गया अनापानसति योग एक शक्तिशाली माइंडफुलनेस ध्यान है, जो श्वास की जागरूकता पर केंद्रित है और बाहरी दुनिया और स्वयं का अवलोकन करता है। नीचे दिए गए चरणों का पालन करें और सुबह-शाम, तीन महीने तक नियमित अभ्यास करें।</p>
+
+        <!-- ऑडियो सेक्शन और डाउनलोड -->
+        <p><strong>कैसे करें:</strong> ऑडियो डाउनलोड करें और इन सरल चरणों का अनुसरण करें।</p>
+
+        <!-- ऑडियो सेक्शन -->
+        <audio controls>
+            <source src="mp3/Meditation-budha-hindi.mp3" type="audio/mpeg">
+            आपका ब्राउज़र ऑडियो तत्व का समर्थन नहीं करता।
+        </audio>
+
+        <!-- ऑडियो डाउनलोड करें -->
+        <div class="cta">
+            <a href="mp3/Meditation-budha-hindi.mp3" download="Meditation-budha-hindi.mp3">ऑडियो डाउनलोड करें</a>
+        </div>
+
+        <!-- ध्यान के चरण -->
+        <div class="step">
+            <h2 class="step-title">1. पहले 10 मिनट: श्वास पर ध्यान केंद्रित करें</h2>
+            <p class="step-description">
+                आराम से बैठें, अपनी आँखें बंद करें, और अपनी प्राकृतिक श्वास पर ध्यान केंद्रित करें। हर श्वास अंदर लेने और बाहर छोड़ने का अवलोकन करें बिना उसे बदले या नियंत्रित किए।
+            </p>
+            <img src="images/breath1.webp" alt="श्वास पर ध्यान">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. अगले 10 मिनट: ध्वनियों की जागरूकता</h2>
+            <p class="step-description">
+                अपनी श्वास पर ध्यान केंद्रित करना जारी रखें, और किसी भी बाहरी ध्वनि के प्रति जागरूक बनें। उन्हें मौजूद रहने दें, बिना आपके आंतरिक ध्यान को भंग किए।
+            </p>
+            <img src="images/breath2.webp" alt="ध्वनियों की जागरूकता">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. तीसरे 10 मिनट: स्वयं का अवलोकन करें</h2>
+            <p class="step-description">
+                अपनी श्वास का अवलोकन करते रहें, लेकिन अब स्वयं का भी अवलोकन करें। एक दर्शक की तरह अपने विचारों, भावनाओं और संवेदनाओं को देखें, बिना किसी लगाव के।
+            </p>
+            <img src="images/breath3.webp" alt="स्वयं का अवलोकन">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">4. अंतिम 10 मिनट: श्वास और दुनिया दोनों का अवलोकन करें</h2>
+            <p class="step-description">
+                अपनी श्वास और बाहरी दुनिया का अवलोकन करते रहें, अपने अंदर और आसपास होने वाली सभी घटनाओं के साक्षी बनें। किसी भी लगाव को छोड़ दें और केवल देखें।
+            </p>
+            <img src="images/breath3.webp" alt="श्वास और दुनिया का अवलोकन">
+        </div>
+    </section>
+</body>
+
+
+</html>

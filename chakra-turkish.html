@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chackra</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+		.step-points {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.step-points li {
+    background-color: #f3e5f5;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    line-height: 1.5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.step-points li strong {
+    color: #8e24aa;
+}
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Çakra Nefes Meditasyonu</h1>
+
+        <p>Çakra Nefes Meditasyonu, yedi çakranın her birine farkındalık ve enerji getiren bir uygulamadır. Bu aktif meditasyon, çakraları canlandırmak için hızlı nefes almayı ve hafif hareketleri kullanır ve rehberli bir deneyim için müzik eşliğinde yapılır. Her çakrayı keşfetmek için aşağıdaki adımları izleyin.</p>
+
+        <!-- Video Bölümü -->
+        <video controls>
+            <source src="mp4/chackra.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+        
+        <!-- Video İndir -->
+        <div class="cta">
+            <a href="mp4/chackra.mp4" download="chackra.mp4" class="download-btn">Videoyu İndir</a>
+        </div>
+
+        <!-- Ses Bölümü ve İndirme Seçeneği -->
+        <p><strong>Bu meditasyonu uygulamak için:</strong> Sesi indirip aşağıdaki adımları takip ederken dinleyin.</p>
+        
+        <!-- Ses Bölümü -->
+        <audio controls>
+            <source src="mp3/chakra.mp3" type="audio/mpeg">
+            Tarayıcınız ses öğesini desteklemiyor.
+        </audio>
+        
+        <!-- Ses İndir -->
+        <div class="cta">
+            <a href="mp3/chakra.mp3" download="chakra.mp3">Sesi İndir</a>
+        </div>
+
+        <!-- Meditasyon Adımları -->
+        <div class="step">
+            <h2 class="step-title">Birinci Aşama: Her Çakra Üzerinden Nefes Alma (45 dakika)</h2>
+            <ul class="step-points">
+                <li><strong>Rahatça ayakta durun:</strong> Ayaklarınızı omuz genişliğinde açın ve vücudunuzu rahat bırakın.</li>
+                <li><strong>Birinci çakraya odaklanın:</strong> Ağzınızı açık tutarak derin ve hızlı bir nefes almayı başlatın ve pelvik bölgeye (birinci çakra) yönlendirin.</li>
+                <li><strong>Her çan sesiyle yukarıya geçin:</strong> Her çan sesiyle nefesinizi bir sonraki çakraya kaydırın, her adımı daha yumuşak ve hızlı hale getirin.</li>
+                <li><strong>Doğal hareketi koruyun:</strong> Hafif vücut hareketlerine izin verin, ancak ayaklarınız yere sabit kalmalıdır.</li>
+                <li><strong>Rahat kalın:</strong> Eklemlerinizi gevşetin ve her çakranın hislerine dikkatinizi verin.</li>
+                <li><strong>Yedinci çakraya ulaştıktan sonra:</strong> Nefesinizi her çakra üzerinden yavaşça aşağı doğru indirin.</li>
+            </ul>
+            <img src="images/chackra.png" alt="Her çakra üzerinden nefes alma">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">İkinci Aşama: Dinlenme ve Sessizlik (15 dakika)</h2>
+            <p class="step-description">Nefes alma döngülerinin ardından gözlerinizi kapatıp oturun veya uzanın. Yargısız bir şekilde içsel hisleri gözlemleyerek sakin bir duruma geçin. Bu aşama, nefes alırken elde edilen enerji ve farkındalığı bütünleştirmenize yardımcı olur.</p>
+            <img src="images/witness.webp" alt="Sessizlikte Dinlenme">
+        </div>
+
+        <!-- Çakra Meditasyonu için Ekstra Rehberlik -->
+        <div class="step">
+            <h2 class="step-title">Ekstra Rehberlik</h2>
+            <p class="step-description">Bu meditasyonda nefesin her çakranın benzersiz enerjisini hissetmeye köprü olmasına izin verin. Nefesi zorlamayın; bunun yerine, her nefeste farkındalığınızın nazikçe her çakraya yerleşmesine izin verin. Zamanla, her çakra ile ilgili hisleri doğal olarak tanımaya başlayacak ve her enerji merkezi ile daha derin bir bağlantı kuracaksınız.</p>
+        </div>
+
+        <!-- Eyleme Çağrı -->
+        <div class="cta">
+            <a href="pdf/chakra.pdf">Çakra Nefes Meditasyonu Hakkında Daha Fazla Bilgi Edinin</a>
+        </div>
+    </section>
+</body>
+
+
+
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nataraj Meditation</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Méditation "Qui Suis-Je"</h1>
+
+        <p>Cette méditation, issue de la série d’Osho "Qui Suis-Je", se concentre sur la conscience de la respiration et l'auto-exploration. L'objectif est d'atteindre un état de conscience plus profond en observant la relation entre la respiration, les émotions, et la question de l'identité personnelle.</p>
+
+        <!-- Section audio et téléchargement -->
+        <p><strong>Comment pratiquer :</strong> Téléchargez l'audio et suivez ces étapes pour votre méditation.</p>
+
+        <!-- Section audio -->
+        <audio controls>
+            <source src="mp3/Main_Kaun_Hun_06.mp3" type="audio/mpeg">
+            Votre navigateur ne prend pas en charge l'élément audio.
+        </audio>
+
+        <!-- Télécharger l'audio -->
+        <div class="cta">
+            <a href="mp3/Main_Kaun_Hun_06.mp3" download="Main_Kaun_Hun_06.mp3">Télécharger l'audio</a>
+        </div>
+
+        <!-- Étapes de la méditation -->
+        <div class="step">
+            <h2 class="step-title">1. Concentrez-vous sur votre respiration</h2>
+            <p class="step-description">Asseyez-vous confortablement, fermez les yeux, et concentrez-vous sur votre respiration naturelle. Observez comment votre état mental influence votre respiration. Ne tentez pas de la contrôler, soyez simplement un témoin.</p>
+            <img src="images/mainkunhn1.webp" alt="Concentrez-vous sur la respiration">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">2. Ralentissez votre respiration</h2>
+            <p class="step-description">Commencez progressivement à ralentir votre respiration. Remarquez comment, en respirant plus lentement et profondément, des émotions comme la colère ou l'anxiété s'apaisent. La respiration et les émotions sont étroitement liées.</p>
+            <img src="images/mainkunhn2.webp" alt="Ralentir la respiration">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">3. Posez la question "Qui Suis-Je?"</h2>
+            <p class="step-description">En restant conscient de votre respiration, commencez à vous demander "Qui suis-je ?" Cette interrogation vous aidera à aller au-delà de vos rôles et identités pour expérimenter votre véritable moi.</p>
+            <img src="images/mainkunhn3.webp" alt="Interrogation Qui Suis-Je">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">4. Pratiquez quotidiennement</h2>
+            <p class="step-description">Osho recommande de pratiquer cette méditation tous les jours, matin et soir, pour de meilleurs résultats. La constance vous aidera à atteindre un état de conscience de soi plus profond.</p>
+        </div>
+    </section>
+</body>
+
+
+</html>

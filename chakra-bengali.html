@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chackra</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+		.step-points {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.step-points li {
+    background-color: #f3e5f5;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    line-height: 1.5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.step-points li strong {
+    color: #8e24aa;
+}
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>চক্র শ্বাস-প্রশ্বাস ধ্যান</h1>
+
+        <p>চক্র শ্বাস-প্রশ্বাস ধ্যান এমন একটি অনুশীলন যা সাতটি চক্রে সচেতনতা এবং শক্তি নিয়ে আসে। এই সক্রিয় ধ্যান দ্রুত শ্বাস এবং মৃদু গতিবিধি ব্যবহার করে চক্রগুলিকে পুনরুজ্জীবিত করে এবং এটি একটি সুর নির্দেশিত অভিজ্ঞতার জন্য সঙ্গীতের সাথে সম্পন্ন হয়। প্রতিটি চক্র অন্বেষণ করতে নীচের ধাপগুলি অনুসরণ করুন।</p>
+
+        <!-- ভিডিও সেকশন -->
+        <video controls>
+            <source src="mp4/chackra.mp4" type="video/mp4">
+            আপনার ব্রাউজার ভিডিও সমর্থন করে না।
+        </video>
+        
+        <!-- ভিডিও ডাউনলোড করুন -->
+        <div class="cta">
+            <a href="mp4/chackra.mp4" download="chackra.mp4" class="download-btn">ভিডিও ডাউনলোড করুন</a>
+        </div>
+
+        <!-- অডিও সেকশন এবং ডাউনলোড অপশন -->
+        <p><strong>এই ধ্যান অনুশীলনের জন্য:</strong> অডিওটি ডাউনলোড করুন এবং নীচের ধাপগুলি অনুসরণ করে শুনুন।</p>
+        
+        <!-- অডিও সেকশন -->
+        <audio controls>
+            <source src="mp3/chakra.mp3" type="audio/mpeg">
+            আপনার ব্রাউজার অডিও সমর্থন করে না।
+        </audio>
+        
+        <!-- অডিও ডাউনলোড করুন -->
+        <div class="cta">
+            <a href="mp3/chakra.mp3" download="chakra.mp3">অডিও ডাউনলোড করুন</a>
+        </div>
+
+        <!-- ধ্যান ধাপ -->
+        <div class="step">
+            <h2 class="step-title">প্রথম ধাপ: প্রতিটি চক্রের মাধ্যমে শ্বাস নেওয়া (45 মিনিট)</h2>
+            <ul class="step-points">
+                <li><strong>আরামদায়কভাবে দাঁড়ান:</strong> আপনার পা কাঁধের চওড়ায় রাখুন এবং আপনার শরীরকে শিথিল রাখুন।</li>
+                <li><strong>প্রথম চক্রে মনোযোগ দিন:</strong> মুখ খোলা রেখে তীব্র শ্বাস নেওয়া শুরু করুন এবং এটি পেলভিক অঞ্চলে (প্রথম চক্র) কেন্দ্রীভূত করুন।</li>
+                <li><strong>প্রতিটি ঘণ্টার শব্দে উপরে উঠুন:</strong> প্রতিটি ঘণ্টার শব্দে আপনার শ্বাস পরিবর্তন করুন এবং প্রতিটি উপরের স্তরটি আরও কোমল এবং দ্রুত করুন।</li>
+                <li><strong>প্রাকৃতিক আন্দোলন বজায় রাখুন:</strong> সামান্য শরীরের নড়াচড়ার অনুমতি দিন, তবে আপনার পা মাটিতে দৃঢ় রাখুন।</li>
+                <li><strong>শিথিল থাকুন:</strong> আপনার জয়েন্টগুলি শিথিল রাখুন এবং প্রতিটি চক্রের অনুভূতিতে আপনার সচেতনতা স্থির করুন।</li>
+                <li><strong>সপ্তম চক্রে পৌঁছানোর পর:</strong> প্রতিটি চক্রে শ্বাস ধীরে ধীরে নিচের দিকে নামতে দিন।</li>
+            </ul>
+            <img src="images/chackra.png" alt="প্রতিটি চক্রের মাধ্যমে শ্বাস নেওয়া">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">দ্বিতীয় ধাপ: বিশ্রাম এবং নীরবতা (15 মিনিট)</h2>
+            <p class="step-description">শ্বাস চক্রগুলি সম্পন্ন করার পরে, চোখ বন্ধ করে বসুন বা শুয়ে পড়ুন। প্রশান্তির একটি অবস্থায় প্রবেশ করুন এবং কোনও বিচার ছাড়াই ভেতরের সংবেদনগুলি লক্ষ্য করুন। এই ধাপটি শ্বাসের সময় অর্জিত শক্তি এবং সচেতনতা সংহত করতে সহায়ক।</p>
+            <img src="images/witness.webp" alt="নীরবতার মধ্যে বিশ্রাম">
+        </div>
+
+        <!-- অতিরিক্ত চক্র ধ্যান ব্যাখ্যা -->
+        <div class="step">
+            <h2 class="step-title">অতিরিক্ত নির্দেশিকা</h2>
+            <p class="step-description">এই ধ্যানে, শ্বাসকে প্রতিটি চক্রের অনন্য শক্তি অনুভব করার একটি সেতু হিসেবে ব্যবহার করুন। শ্বাসকে জোর করবেন না; বরং প্রতিটি শ্বাসে প্রতিটি চক্রে আপনার সচেতনতা মৃদুভাবে স্থাপন করুন। সময়ের সাথে সাথে, আপনি প্রতিটি চক্রের সাথে জড়িত সংবেদনগুলি স্বাভাবিকভাবেই চিনতে শুরু করবেন, যা প্রতিটি শক্তি কেন্দ্রের সাথে গভীর সংযোগের দিকে নিয়ে যাবে।</p>
+        </div>
+
+        <!-- কাজের জন্য আহ্বান -->
+        <div class="cta">
+            <a href="pdf/chakra.pdf">চক্র শ্বাস-প্রশ্বাস ধ্যান সম্পর্কে আরও জানুন</a>
+        </div>
+    </section>
+</body>
+
+
+</html>

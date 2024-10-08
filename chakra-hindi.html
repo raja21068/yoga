@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chackra</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+		.step-points {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.step-points li {
+    background-color: #f3e5f5;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    line-height: 1.5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.step-points li strong {
+    color: #8e24aa;
+}
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>चक्र ब्रीदिंग ध्यान</h1>
+
+        <p>चक्र ब्रीदिंग ध्यान एक ऐसा अभ्यास है जो सातों चक्रों में जागरूकता और ऊर्जा लाता है। इस सक्रिय ध्यान में तेज़ सांस लेना और हल्की हलचल का उपयोग करके चक्रों को पुनर्जीवित किया जाता है, और इसे एक निर्देशित अनुभव के लिए संगीत के साथ जोड़ा गया है। प्रत्येक चक्र का अनुभव करने के लिए नीचे दिए गए चरणों का पालन करें।</p>
+
+        <!-- वीडियो सेक्शन -->
+        <video controls>
+            <source src="mp4/chackra.mp4" type="video/mp4">
+            आपका ब्राउज़र वीडियो टैग का समर्थन नहीं करता।
+        </video>
+        
+        <!-- वीडियो डाउनलोड करें -->
+        <div class="cta">
+            <a href="mp4/chackra.mp4" download="chackra.mp4" class="download-btn">वीडियो डाउनलोड करें</a>
+        </div>
+
+        <!-- ऑडियो सेक्शन और डाउनलोड विकल्प -->
+        <p><strong>इस ध्यान का अभ्यास करने के लिए:</strong> ऑडियो डाउनलोड करें और नीचे दिए गए चरणों का पालन करें।</p>
+        
+        <!-- ऑडियो सेक्शन -->
+        <audio controls>
+            <source src="mp3/chakra.mp3" type="audio/mpeg">
+            आपका ब्राउज़र ऑडियो टैग का समर्थन नहीं करता।
+        </audio>
+        
+        <!-- ऑडियो डाउनलोड करें -->
+        <div class="cta">
+            <a href="mp3/chakra.mp3" download="chakra.mp3">ऑडियो डाउनलोड करें</a>
+        </div>
+
+        <!-- ध्यान चरण -->
+        <div class="step">
+            <h2 class="step-title">पहला चरण: प्रत्येक चक्र के माध्यम से सांस लेना (45 मिनट)</h2>
+            <ul class="step-points">
+                <li><strong>आराम से खड़े हों:</strong> अपने पैरों को कंधों की चौड़ाई पर रखें और शरीर को आराम दें।</li>
+                <li><strong>पहले चक्र पर ध्यान केंद्रित करें:</strong> खुले मुंह से गहरी, तेज सांस लेना शुरू करें और इसे श्रोणि क्षेत्र (पहला चक्र) में केंद्रित करें।</li>
+                <li><strong>हर घंटी के साथ ऊपर की ओर बढ़ें:</strong> हर घंटी के साथ अपनी सांस को अगले चक्र में बदलें, प्रत्येक चरण को हल्का और तेज बनाएं।</li>
+                <li><strong>प्राकृतिक हलचल बनाए रखें:</strong> हल्के शरीर की हलचल की अनुमति दें, जैसे कि हिलना या खिंचाव, लेकिन पैरों को स्थिर रखें।</li>
+                <li><strong>आराम से रहें:</strong> जोड़ों को ढीला रखें और प्रत्येक चक्र की संवेदनाओं में अपनी जागरूकता को केंद्रित करें।</li>
+                <li><strong>सातवें चक्र तक पहुँचने के बाद:</strong> धीरे-धीरे प्रत्येक चक्र से अपनी सांस को नीचे लाएं।</li>
+            </ul>
+            <img src="images/chackra.png" alt="चक्रों के माध्यम से सांस लेना">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">दूसरा चरण: विश्राम और मौन (15 मिनट)</h2>
+            <p class="step-description">सांसों के चक्र समाप्त होने के बाद, आंखें बंद करके बैठें या लेट जाएं। एक शांत अवस्था में प्रवेश करें और अपने भीतर की संवेदनाओं का गवाह बनें, बिना किसी निर्णय के। यह चरण सांसों के दौरान बनी ऊर्जा और जागरूकता को समेकित करने में सहायक होता है।</p>
+            <img src="images/witness.webp" alt="मौन में विश्राम">
+        </div>
+
+        <!-- अतिरिक्त चक्र ध्यान विवरण -->
+        <div class="step">
+            <h2 class="step-title">अतिरिक्त मार्गदर्शन</h2>
+            <p class="step-description">इस ध्यान में, सांस को प्रत्येक चक्र की विशिष्ट ऊर्जा को महसूस करने का पुल बनने दें। सांस को मजबूर न करें; इसके बजाय, अपनी जागरूकता को प्रत्येक चक्र में धीरे-धीरे बसने दें। समय के साथ, आप स्वाभाविक रूप से प्रत्येक चक्र से जुड़े अनुभव को पहचानने लगेंगे, जिससे एक गहरी संबंध उत्पन्न होगा।</p>
+        </div>
+
+        <!-- कॉल टू एक्शन -->
+        <div class="cta">
+            <a href="pdf/chakra.pdf">चक्र ब्रीदिंग ध्यान के बारे में अधिक जानें</a>
+        </div>
+    </section>
+</body>
+
+
+</html>

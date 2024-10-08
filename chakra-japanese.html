@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chackra</title>
+    <!-- Add Google Translate meta tag -->
+    <meta name="google-translate-customization" content="YOUR-CUSTOMIZATION-ID"></meta>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            background-color: #1abc9c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #2ecc71;
+            margin: 10px auto;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .step-title {
+            font-size: 2em;
+            color: #16a085;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-left: 5px solid #16a085;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #1abc9c;
+        }
+
+        video,
+        audio {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .step-title {
+                font-size: 1.6em;
+            }
+
+            .step-description {
+                font-size: 1em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .cta a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Google Translate Custom Styling */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #333;
+        }
+
+        #google_translate_element select {
+            border: none;
+            background-color: #16a085;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #google_translate_element select:focus {
+            outline: none;
+        }
+		.step-points {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.step-points li {
+    background-color: #f3e5f5;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    line-height: 1.5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.step-points li strong {
+    color: #8e24aa;
+}
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>チャクラ呼吸瞑想</h1>
+
+        <p>チャクラ呼吸瞑想は、7つのチャクラに意識とエネルギーをもたらすための練習です。このアクティブな瞑想では、速い呼吸と穏やかな動きを使用してチャクラを活性化させ、音楽と共にガイド付きの体験を提供します。各チャクラを探求するために以下のステップに従ってください。</p>
+
+        <!-- ビデオセクション -->
+        <video controls>
+            <source src="mp4/chackra.mp4" type="video/mp4">
+            お使いのブラウザはビデオタグをサポートしていません。
+        </video>
+        
+        <!-- ビデオのダウンロード -->
+        <div class="cta">
+            <a href="mp4/chackra.mp4" download="chackra.mp4" class="download-btn">ビデオをダウンロード</a>
+        </div>
+
+        <!-- オーディオセクションとダウンロードオプション -->
+        <p><strong>この瞑想を練習するには:</strong> オーディオをダウンロードして、以下の手順に従ってください。</p>
+        
+        <!-- オーディオセクション -->
+        <audio controls>
+            <source src="mp3/chakra.mp3" type="audio/mpeg">
+            お使いのブラウザはオーディオ要素をサポートしていません。
+        </audio>
+        
+        <!-- オーディオのダウンロード -->
+        <div class="cta">
+            <a href="mp3/chakra.mp3" download="chakra.mp3">オーディオをダウンロード</a>
+        </div>
+
+        <!-- 瞑想のステップ -->
+        <div class="step">
+            <h2 class="step-title">第一ステージ：各チャクラを通しての呼吸（45分）</h2>
+            <ul class="step-points">
+                <li><strong>楽な姿勢で立つ:</strong> 足を肩幅に広げ、体をリラックスさせます。</li>
+                <li><strong>第一チャクラに集中する:</strong> 開いた口で速く深い呼吸を始め、骨盤のエリア（第一チャクラ）に集中します。</li>
+                <li><strong>ベルの音と共に上へ移動:</strong> 各ベルの音で次のチャクラに移動し、上昇する段階ごとに軽く早くします。</li>
+                <li><strong>自然な動きを維持する:</strong> 軽い動きが許されますが、足はしっかりと地面に着けます。</li>
+                <li><strong>リラックスを保つ:</strong> 関節を緩め、各チャクラの感覚に意識を向けます。</li>
+                <li><strong>第七チャクラに到達した後:</strong> ゆっくりと呼吸を各チャクラを通じて下に戻します。</li>
+            </ul>
+            <img src="images/chackra.png" alt="各チャクラを通しての呼吸">
+        </div>
+
+        <div class="step">
+            <h2 class="step-title">第二ステージ：休息と静寂（15分）</h2>
+            <p class="step-description">呼吸のサイクルが完了したら、目を閉じて座るか横になります。穏やかな状態に入り、判断せずに内面の感覚を観察してください。このステージは、呼吸中に蓄積されたエネルギーと意識を統合するのに役立ちます。</p>
+            <img src="images/witness.webp" alt="静寂の中で休む">
+        </div>
+
+        <!-- チャクラ瞑想の追加ガイダンス -->
+        <div class="step">
+            <h2 class="step-title">追加のガイダンス</h2>
+            <p class="step-description">この瞑想では、呼吸を使って各チャクラの独自のエネルギーを感じる架け橋としてください。呼吸を強制せず、各呼吸で意識を自然に各チャクラに落ち着かせます。時間が経つにつれ、各チャクラに関連する感覚を自然に認識するようになり、各エネルギーセンターとより深い繋がりを持つようになります。</p>
+        </div>
+
+        <!-- 行動への呼びかけ -->
+        <div class="cta">
+            <a href="pdf/chakra.pdf">チャクラ呼吸瞑想についてさらに詳しく</a>
+        </div>
+    </section>
+</body>
+
+
+
+</html>
