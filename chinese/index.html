@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation Techniques - Language Selection</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('path-to-background-image.jpg');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        p {
+            font-size: 1em;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .language-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
+        }
+
+        .language-tile {
+            padding: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Colors for each language tile */
+        .language-chinese { background-color: #ff6f61; }
+        .language-hindi { background-color: #ffcc5c; }
+        .language-spanish { background-color: #88d8b0; }
+        .language-french { background-color: #6ec6ff; }
+        .language-arabic { background-color: #ffab91; }
+        .language-bengali { background-color: #ffb74d; }
+        .language-russian { background-color: #9575cd; }
+        .language-portuguese { background-color: #4db6ac; }
+        .language-urdu { background-color: #ff8a65; }
+        .language-japanese { background-color: #4fc3f7; }
+        .language-turkish { background-color: #aed581; }
+        .language-english { background-color: #64b5f6; }
+
+        .language-tile:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        .flag {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+
+        .quick-access {
+            margin-top: 20px;
+        }
+
+        .quick-access button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #ffffff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .quick-access button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.4em;
+            }
+            p {
+                font-size: 0.9em;
+            }
+            .language-tile {
+                padding: 10px;
+            }
+            .flag {
+                font-size: 1.2em;
+            }
+            .quick-access button {
+                width: 100%;
+                font-size: 1em;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Choose Your Language to Begin Your Meditation Journey</h1>
+        <p>Explore techniques for peace and mindfulness in the language most comfortable for you.</p>
+
+        <div class="language-grid">
+            <a href="chinese/index.html" class="language-tile language-chinese">
+                <div class="flag">🇨🇳</div>
+                <span>Chinese | 中文</span>
+            </a>
+            <a href="main-hindi.html" class="language-tile language-hindi">
+                <div class="flag">🇮🇳</div>
+                <span>Hindi | हिंदी</span>
+            </a>
+            <a href="main-spanish.html" class="language-tile language-spanish">
+                <div class="flag">🇪🇸</div>
+                <span>Spanish | Español</span>
+            </a>
+            <a href="main-french.html" class="language-tile language-french">
+                <div class="flag">🇫🇷</div>
+                <span>French | Français</span>
+            </a>
+            <a href="main-arabic.html" class="language-tile language-arabic">
+                <div class="flag">🇸🇦</div>
+                <span>Arabic | العربية</span>
+            </a>
+            <a href="main-bengali.html" class="language-tile language-bengali">
+                <div class="flag">🇧🇩</div>
+                <span>Bengali | বাংলা</span>
+            </a>
+            <a href="main-russian.html" class="language-tile language-russian">
+                <div class="flag">🇷🇺</div>
+                <span>Russian | Русский</span>
+            </a>
+            <a href="main-portuguese.html" class="language-tile language-portuguese">
+                <div class="flag">🇧🇷</div>
+                <span>Portuguese | Português</span>
+            </a>
+            <a href="main-urdu.html" class="language-tile language-urdu">
+                <div class="flag">🇵🇰</div>
+                <span>Urdu | اردو</span>
+            </a>
+            <a href="main-japanese.html" class="language-tile language-japanese">
+                <div class="flag">🇯🇵</div>
+                <span>Japanese | 日本語</span>
+            </a>
+            <a href="main-turkish.html" class="language-tile language-turkish">
+                <div class="flag">🇹🇷</div>
+                <span>Turkish | Türkçe</span>
+            </a>
+            <a href="main-english.html" class="language-tile language-english">
+                <div class="flag">🇬🇧</div>
+                <span>English</span>
+            </a>
+        </div>
+
+        <div class="quick-access">
+            <button onclick="window.location.href='main-english.html'">Start in English</button>
+        </div>
+    </div>
+</body>
+</html>

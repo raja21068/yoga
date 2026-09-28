@@ -1,0 +1,22 @@
+{
+  "html_pages": 123,
+  "part1_book_chapters": 2,
+  "part2_book_chapters": 3,
+  "part3_book_chapters": 19,
+  "part4_book_chapters": 3,
+  "part5_questions": 12,
+  "featured_active": 9,
+  "featured_passive": 6,
+  "old_generic_phrase_remaining": [],
+  "exact_duplicate_guide_pages": [],
+  "broken_internal_html_links": [],
+  "broken_local_nonmedia_assets": [],
+  "original_media_refs": 42,
+  "removed_original_media_refs": [],
+  "added_media_refs": [],
+  "original_image_refs": 44,
+  "removed_original_image_refs": [],
+  "added_home_feature_image_refs": [
+    "images/hands-open.webp"
+  ]
+}

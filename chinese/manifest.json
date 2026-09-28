@@ -1,0 +1,19 @@
+{
+  "name": "静心 · 中文实践版",
+  "short_name": "静心",
+  "description": "按书阅读，也把一个方法真正练进去。",
+  "lang": "zh-CN",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f0f8ff",
+  "theme_color": "#8e24aa",
+  "icons": [
+    {
+      "src": "../images/witness.webp",
+      "sizes": "any",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ]
+}
