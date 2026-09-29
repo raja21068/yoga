@@ -1,0 +1,19 @@
+{
+  "name": "OSHO Meditation · Deutsche Praxis",
+  "short_name": "OSHO Meditation",
+  "description": "Meditationsmethoden, Buchweg und tägliche Praxis auf Deutsch.",
+  "lang": "de",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f0f8ff",
+  "theme_color": "#8e24aa",
+  "icons": [
+    {
+      "src": "../images/witness.webp",
+      "sizes": "any",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+html
+html
+html
+<html lang="de"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Eine federleichte Berührung</title><meta content="Lege die Handflächen federleicht und ohne Druck auf die geschlossenen Augen; das Buch beschreibt dies als Möglichkeit, die durch die Augen fließende Energie nach innen zu wenden." name="description"/><link href="../css/theme.css" rel="stylesheet"/><link href="manifest.json" rel="manifest"/><meta content="#8e24aa" name="theme-color"/><meta content="yes" name="apple-mobile-web-app-capable"/><meta content="yes" name="mobile-web-app-capable"/></head><body id="top"><header class="hero"><h1>Eine federleichte Berührung</h1><p>Die Augen leicht berühren und die Energie nach innen wenden</p></header><div class="detail-wrap"><a class="back" href="index.html#part3">← Zurück zu den Meditationsmethoden</a><article class="detail-card"><div class="crumb">Teil Drei · Kapitel 17 · Mit dem dritten Auge beobachten</div><h1>Eine federleichte Berührung</h1><p class="lead">Lege die Handflächen federleicht und ohne Druck auf die geschlossenen Augen; das Buch beschreibt dies als Möglichkeit, die durch die Augen fließende Energie nach innen zu wenden.</p><div class="meta"><span class="pill">Etwa 40 Min. · Fortgeschritten</span><span class="pill">Kern: Beobachten</span></div><h2>Praxisstil</h2><ol class="practice-steps" id="steps"><li>Schließe die Augen und entspanne den ganzen Körper.</li><li>Lege die Handflächen leicht über die Augen – berühren, niemals drücken.</li><li>Bleib der Qualität einer Berührung bewusst, die kein Gewicht hat.</li></ol><div class="witness-box"><strong>Verliere den Beobachter nicht</strong><br/>Die Methode ist nur ein Eingang. Ob sie Atem, Tanz, Klang, Dunkelheit, Sitzen oder Beziehung nutzt – am wichtigsten ist, allmählich zu sehen, was geschieht, statt nur einer Erfahrung nachzujagen.</div><div class="nextrow"><a href="index.html#part3">Zurück zu den Methoden</a><a href="guide-right-click.html">Die richtige Methode wird einrasten →</a></div></article></div><div class="footer">Meditation ist keine Flucht aus dem Leben; sie ist das Lernen, das eigene Zentrum mitten im Leben nicht zu verlieren.</div><nav aria-label="Mobile Navigation" class="mobile-dock"><a class="accent" href="index.html#part3"><span class="icon">☰</span><span>Methoden</span></a><a href="#steps"><span class="icon">①</span><span>Schritte</span></a><a href="#top"><span class="icon">↑</span><span>Nach oben</span></a><a href="index.html"><span class="icon">⌂</span><span>Startseite</span></a></nav><script>
+(function(){
+  try{localStorage.setItem('meditation-last-page',location.pathname.split('/').pop()||'index.html')}catch(e){}
+  const audios=[...document.querySelectorAll('audio')];
+  function playAudio(i=0){
+    const a=audios[i]||audios[0]; if(!a) return;
+    a.scrollIntoView({behavior:'smooth',block:'center'});
+    a.play().catch(()=>{});
+  }
+  document.querySelectorAll('.play-btn').forEach(b=>b.addEventListener('click',()=>playAudio(Number(b.dataset.audioIndex||0))));
+  document.querySelectorAll('.dock-play').forEach(b=>b.addEventListener('click',()=>playAudio(0)));
+  document.querySelectorAll('.primary-action[href="#practice-audio"]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();playAudio(0)}));
+})();
+</script><script defer="True" src="../js/app-de.js"></script></body></html>
