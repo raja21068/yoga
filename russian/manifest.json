@@ -1,0 +1,19 @@
+{
+  "name": "OSHO Медитация · Русская практика",
+  "short_name": "Медитация",
+  "description": "Читайте книгу по порядку и глубоко практикуйте один метод.",
+  "lang": "ru",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f0f8ff",
+  "theme_color": "#8e24aa",
+  "icons": [
+    {
+      "src": "../images/witness.webp",
+      "sizes": "any",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ]
+}

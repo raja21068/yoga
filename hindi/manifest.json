@@ -1,0 +1,19 @@
+{
+  "name": "OSHO ध्यान · हिंदी अभ्यास",
+  "short_name": "ध्यान",
+  "description": "पुस्तक को क्रम से पढ़ें और एक विधि का गहराई से अभ्यास करें।",
+  "lang": "hi",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f0f8ff",
+  "theme_color": "#8e24aa",
+  "icons": [
+    {
+      "src": "../images/witness.webp",
+      "sizes": "any",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ]
+}

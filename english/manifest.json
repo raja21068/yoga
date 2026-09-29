@@ -1,0 +1,19 @@
+{
+  "name": "OSHO Meditation · English Practice",
+  "short_name": "Meditation",
+  "description": "Read the book in sequence and practice one method deeply.",
+  "lang": "en",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f0f8ff",
+  "theme_color": "#8e24aa",
+  "icons": [
+    {
+      "src": "../images/witness.webp",
+      "sizes": "any",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ]
+}
