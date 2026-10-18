@@ -1,4 +1,4 @@
-const CACHE='osho-meditation-en-202610181456';
+const CACHE='osho-meditation-en-202610181523';
 const CORE=['./','index.html','../css/theme.css','../js/app-en.js','../js/practice-timer.js','manifest.json'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE.map(u=>new Request(u,{cache:'reload'})))).catch(()=>{}));self.skipWaiting();});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));self.clients.claim();});
