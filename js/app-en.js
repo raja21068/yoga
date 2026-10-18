@@ -80,13 +80,13 @@ function renderDashboard(){
  <div class="dashboard-actions">
    <a class="dash-primary" href="${last?.href||'#method-finder'}"><b>▶</b><span><strong>${last?'Continue Last Practice':'Find a Meditation'}</strong><small>${last?last.title:'Find quickly by active, passive, breathing, dance, and more'}</small></span></a>
    <a href="#method-finder"><b>⌕</b><span><strong>Find a Meditation</strong><small>Filter quickly by practice style</small></span></a>
-   <a href="#book-path"><b>☷</b><span><strong>Read the Book</strong><small>Go deeper through the five parts of the book</small></span></a>
+   <a href="#part3"><b>☷</b><span><strong>All Techniques</strong><small>Browse every method, active and passive</small></span></a>
  </div>${progress}${favs}`;
 }
 if(isHome()){addCardFavorites();renderDashboard();document.addEventListener('osho:fav',renderDashboard);document.addEventListener('osho:trial',renderDashboard)}
 
 // Replace mobile home dock with daily-practice-first destinations.
-function tuneHomeDock(){if(!isHome())return;const d=$('.mobile-dock');if(!d)return;d.innerHTML='<a class="accent" href="#practice-dashboard"><span class="icon">◉</span><span>Today</span></a><a class="start" href="#featured"><span class="icon">★</span><span>Featured</span></a><a href="#method-finder"><span class="icon">⌕</span><span>Find</span></a><a href="#book-path"><span class="icon">▤</span><span>Book</span></a>'}
+function tuneHomeDock(){if(!isHome())return;const d=$('.mobile-dock');if(!d)return;d.innerHTML='<a class="accent" href="#practice-dashboard"><span class="icon">◉</span><span>Today</span></a><a class="start" href="#featured"><span class="icon">★</span><span>Featured</span></a><a href="#method-finder"><span class="icon">⌕</span><span>Find</span></a><a href="#part3"><span class="icon">▤</span><span>Methods</span></a>'}
 tuneHomeDock();
 
 function stageData(){return $$('.practice-step-card').map((el,i)=>{
